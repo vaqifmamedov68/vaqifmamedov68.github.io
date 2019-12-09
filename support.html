@@ -1,0 +1,1227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from SolidETH.org/support.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 13:15:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n); console.log(t.src);}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="content-language" content="en">
+    
+    <title>SolidETH - The easiest and fastest way to make money in crypto industry</title>
+    <meta name="description" content="The first risk-free blockchain project">
+    <meta name="keywords" content="SolidETH, crypto, hands, mlm, multilevelmarketing, multi, level, marketing, blockchain, cryptocurrency, ethereum, eth, smartcontract, smart, contract, earn, income, profit, invest, investment, investing, project, withoutrisk, risk">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!--
+    <meta property="og:locale" content="en_EN"/>
+    -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="SolidETH - The easiest and fastest way to make money in crypto industry"/>
+    <meta property="og:description" content="The first risk-free blockchain project"/>
+    <meta property="og:image" content="logo/share_start.png"/>
+    <meta property="og:url" content="index.html"/>
+    <meta property="og:site_name" content="SolidETH"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SolidETH_org">
+    <meta name="twitter:title" content="SolidETH - The easiest and fastest way to make money in crypto industry">
+    <meta name="twitter:description" content="The first risk-free blockchain project">
+    <meta name="twitter:image" content="logo/share_start.png">
+    
+    <meta itemprop="name" content="SolidETH - The easiest and fastest way to make money in crypto industry"/>
+    <meta itemprop="description" content="The first risk-free blockchain project"/>
+    <meta itemprop="image" content="logo/share_start.png"/>
+    
+    <meta itemscope itemtype="http://schema.org/Article">
+    <meta itemprop="headline" content="SolidETH - The easiest and fastest way to make money in crypto industry">
+    <meta itemprop="description" content="The first risk-free blockchain project">
+    <meta itemprop="image" content="logo/share_start.png">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!--
+    <link rel="icon" href="./favicon.svg" sizes="any" type="image/svg+xml">
+    -->
+    
+    
+    <link rel="stylesheet" href="assets/js/selectize/css/selectize.bootstrap3.css" />
+
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/js/venobox/venobox68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/js/lightbox/css/lightbox68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/css/core3fa9.css?1494886465">
+    <link rel="stylesheet" href="assets/css/jrange/css/ion.rangeSlider68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/css/jrange/css/ion.rangeSlider.skinFlat68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/css/new_v27383.css?1507840484">
+    <link rel="stylesheet" href="assets/css/animation98b9.css?1498309791">
+    <link rel="stylesheet" href="assets/css/pagesd2fd.css?1507001790">
+    <link rel="stylesheet" href="assets/css/mobile3fa9.css?1494886465">
+    <link rel="stylesheet" href="assets/css/mobile_new98b9.css?1498309791">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/venobox/venobox.min68f8.js?1485983083"></script>
+    <script src="assets/js/lightbox/js/lightbox68f8.js?1485983083"></script>
+    <script src="assets/js/core0b03.js?1507873861"></script>
+    <script src="assets/js/bootstrap.min68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/jquery.vide68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/gmap68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/venobox/venobox.min68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/jrange/js/ion.rangeSlider68f8.js?1485983083"></script>
+
+
+
+
+    <link rel="stylesheet" href="assets/css/basef660.css?1496448411">
+    <link rel="stylesheet" href="assets/css/slick/slick68f8.css?1485983083">
+    <script type="text/javascript" src="assets/js/jquery.countto68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/slick/slick68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/marquee68f8.js?1485983083"></script>
+    <script src="assets/js/amcharts/amcharts.js" type="text/javascript"></script>
+    <script src="assets/js/amcharts/serial.js" type="text/javascript"></script>
+    <script src="assets/js/amcharts/amstock.js" type="text/javascript"></script>
+    <script src="assets/js/amcharts/light.js" type="text/javascript"></script>
+    <script src="assets/js/chart.js" type="text/javascript"></script>
+    <script src="assets/js/moment.js" type="text/javascript"></script>
+    <script src="assets/js/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <!--<script src="./assets/js/trading_v2.js" type="text/javascript"></script>-->
+    
+    <script src="assets/js/selectize/js/standalone/selectize.min.js"></script>
+    
+    
+    <script>
+        const btcPrice=49.054671431801;
+        const usdtPrice=0.0067442393440331;
+    </script>   
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="non-animation bodyaccountno bodylang_en" id="top">
+<style>
+    .langbutton-en {
+
+    }
+    .langbutton-en:before {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -3px;
+        margin-right: 12px;
+        display: block;
+        height: 6px;
+        width: 6px;
+        background: #888888;
+        background-n0: rgba(0, 0, 0, 0.14);
+        border-radius: 3px;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.2s;
+    }
+    .langbutton-en:hover:before {
+        visibility: hidden;
+        opacity: 0;
+    }
+</style>
+
+
+<div class="langbuttons-block " style="margin-top: -192px;">
+    
+    <div class="langbutton langbutton-en">
+        <span class="langbutton-descr">English</span>
+        <a href="support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/en.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-cn">
+        <span class="langbutton-descr">中文</span>
+        <a href="cn/support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/cn.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-ru">
+        <span class="langbutton-descr">Русский</span>
+        <a href="ru/support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/ru.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-es">
+        <span class="langbutton-descr">Español</span>
+        <a href="es/support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/es.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-it">
+        <span class="langbutton-descr">Italiano</span>
+        <a href="it/support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/it.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-de">
+        <span class="langbutton-descr">Deutsch</span>
+        <a href="de/support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/de.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-fr">
+        <span class="langbutton-descr">Français</span>
+        <a href="fr/support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/fr.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-hi">
+        <span class="langbutton-descr">हिंदी</span>
+        <a href="hi/support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/hi.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-ja">
+        <span class="langbutton-descr">日本語</span>
+        <a href="ja/support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/ja.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-kr">
+        <span class="langbutton-descr">한국어</span>
+        <a href="kr/support.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/kr.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    
+    
+    
+    <div class="langbutton langbutton-more">
+        <span class="langbutton-descr">other</span>
+        <a id="langbutton-more-a" class="langbutton-a langbutton-more-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/more.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+<div id="lbother-section" class="lbother-section">
+    <a id="lbother-closebtn" class="lbother-closebtn">
+        <i class="lbother-closebtn-i">
+            <svg fill="#007aff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 5.7070312 4.2929688 L 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 L 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 L 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 L 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path>
+            </svg>
+        </i>
+    </a>
+    <div class="lbother-contentblock">
+        <div class="row">
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/en.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">English</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="cn/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/cn.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">中文</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ru/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ru.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Русский</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="es/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/es.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Español</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="it/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/it.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Italiano</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="de/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/de.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Deutsch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="fr/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/fr.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Français</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="hi/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/hi.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">हिंदी</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ja/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ja.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">日本語</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="kr/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/kr.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">한국어</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4" style="display: none;">
+                <div class="lbother-langblock">
+                    <a href="ar/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ar.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">العربية</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="bn/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" >
+                            <img src="assets/img/new/flags/bn.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">বাংলা</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="id/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/id.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Bahasa Indonesia</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="vi/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/vi.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Tiếng Việt</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            
+            
+           <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="pt/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/pt.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Português</span>
+                    </a>
+                </div>
+            </div> 
+            
+            
+            
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="nl/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/nl.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Nederlands</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="fl/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/fl.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Filipino</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ms/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ms.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Bahasa Melayu</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="uk/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/uk.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Українська Мова</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="kk/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/kk.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Қазақ Тілі</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="tr/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/tr.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Türkçe</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="cs/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/cs.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Čeština</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="pl/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/pl.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Język Polski</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="hu/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/hu.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Magyar Nyelv</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ro/support.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ro.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Limba română</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    document.getElementById('langbutton-more-a').onclick = function() {
+        document.getElementById('lbother-section').classList.add('lbother-section-active');
+    }
+</script>
+
+<script type="text/javascript">
+    document.getElementById('lbother-closebtn').onclick = function() {
+        document.getElementById('lbother-section').classList.remove('lbother-section-active');
+    }
+</script>
+
+
+<div class="loader-wrapper" id="loader-wrapper" style="display: none;">
+    <div class="loader">
+        <div class="loader__inner loader__inner--1"></div>
+        <div class="loader__inner loader__inner--2"></div>
+        <div class="loader__inner loader__inner--3"></div>
+    </div>
+</div>    
+    
+    
+    
+
+
+    
+    
+<nav class="top-menu top-menu--inverse js-topmenu">
+    <div class="clearfix">
+        <div class="row">
+            <div class="col-md-3" style="display: flex; height: 60px;">
+                <a href="index.html" class="logo" style="display: block; margin: auto; margin-left: 0; height: 44px; width: auto;">
+                    <img class="main-light-logo main-light-logo-big" src="logo/logo_main.svg" alt="" width="182" style="width: auto; height: 44px;">
+                    <img class="main-light-logo main-light-logo-small" src="logo/logo_icon.svg" alt="" width="182" style="width: auto; height: 44px;">
+                </a>
+            </div>
+            <div class="col-md-9 top-menu__right">
+                <div class="nav-top">
+                    <ul class="nav-top__list">
+                        <li class="nav-top__item nav-top__item--bold first"><a href="index.html" class="nav-top__link nav-top__link--bold">Main</a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="tg://resolve?domain=SolidETHchat" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-telegram"></i></a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="tg://resolve?domain=SolidETH" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="https://twitter.com/SolidETH_org" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-twitter"></i></a></li>
+                        
+                        <li class="nav-top__item nav-top__item--bold lang_menu_yt_link lang_menu_yt_link_en"><a href="https://www.youtube.com/channel/UCPU7OIxlVb1f0GfzYb02z9g" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-youtube"></i></a></li>
+                        
+                        <li class="nav-top__item nav-top__item--bold"><a href="howitworks.html" class="nav-top__link nav-top__link--bold">How it works</a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="faq.html" class="nav-top__link nav-top__link--bold">FAQ</a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="faqeth.html" class="nav-top__link nav-top__link--bold">Ethereum FAQ</a></li>
+                        <li class="nav-top__item nav-top__item--bold last current parent menu_demo"><a href="dashboard.html" target="_blank" class="nav-top__link nav-top__link--bold nav-top__link--active" style="color: #ff3b30;"><!-- Support -->Demo</a></li>
+                    </ul>
+                    <div class="languages" style="display: none;">
+                        <span class="language language--cur">
+                            RUS
+                        </span>
+                        <ul class="languages__list">
+                            <li><a href="support3322.html?lang=de" class="language">DE</a></li>
+                            <li><a href="support923c.html?lang=pt" class="language">POR</a></li>
+                            <li><a href="supportcf53.html?lang=it" class="language">IT</a></li>
+                            <li><a href="supportc69a.html?lang=es" class="language">ES</a></li>
+                            <li><a href="support9ed2.html?lang=en" class="language">ENG</a></li>
+                            <li><a href="support2139.html?lang=ru" class="language">RUS</a></li>
+                            <li><a href="supporte68f.html?lang=fr" class="language">FR</a></li>
+                            <li><a href="supportdb38.html?lang=cn" class="language">中文</a></li>
+                            <li><a href="support2296.html?lang=tr" class="language">TR</a></li>
+                            <li><a href="supportef8e.html?lang=hi" class="language">HI</a></li>
+                            <li><a href="supporte034.html?lang=vi" class="language">VI</a></li>
+                            <li><a href="supportc9e6.html?lang=ja" class="language">日本語</a></li>
+                            <li><a href="support7542.html?lang=ko" class="language">한국어</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-top__btns">
+                        
+                        
+                                                    <a href="signup.html"  class="btn btn--red-no btn--sign btn--signup"><i class="fas fa-user-plus"></i> Sign up</a>
+                            <a href="login.html" class="btn btn--sign btn--signin"><i class="fas fa-sign-in-alt"></i> Login</a>
+                        
+                                            
+                        
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <a id="langbuttonmobile-a" class="langbuttonmobile-a mobile">
+            <i class="langbuttonmobile-i">
+                <img src="assets/img/new/flags/en.svg" class="langbuttonmobile-img">
+            </i>
+        </a>
+        <script type="text/javascript">
+            document.getElementById('langbuttonmobile-a').onclick = function() {
+                document.getElementById('lbother-section').classList.add('lbother-section-active');
+            }
+        </script>
+        
+        
+        
+        <button class="show-menu mobile">
+            <span></span>
+        </button>
+    </div>
+    
+    
+    
+    
+    <!--signup and login buttons-->
+    <a href="signup.html" class="accbtnmobile-a accbtnmobile-a-signup">
+        <i class="accbtnmobile-i">
+            <svg class="accbtnmobile-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 12 3 A 4 4 0 0 0 8 7 A 4 4 0 0 0 12 11 A 4 4 0 0 0 16 7 A 4 4 0 0 0 12 3 z M 18 12 C 14.7 12 12 14.7 12 18 C 12 21.3 14.7 24 18 24 C 21.3 24 24 21.3 24 18 C 24 14.7 21.3 12 18 12 z M 11.050781 14.046875 C 7.8907812 14.308875 3 15.796 3 18.5 L 3 21 L 10.587891 21 C 10.211891 20.073 10 19.062 10 18 C 10 16.56 10.384781 15.213875 11.050781 14.046875 z M 17 15 L 19 15 L 19 17 L 21 17 L 21 19 L 19 19 L 19 21 L 17 21 L 17 19 L 15 19 L 15 17 L 17 17 L 17 15 z"></path></svg>
+        </i>
+    </a>
+    <a href="login.html" class="accbtnmobile-a accbtnmobile-a-login">
+        <i class="accbtnmobile-i">
+            <svg class="accbtnmobile-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 7 5 C 3.134 5 0 8.134 0 12 C 0 15.866 3.134 19 7 19 C 10.170669 19 12.846171 16.890989 13.707031 14 L 18 14 L 18 17 L 22 17 L 22 14 L 24 14 L 24 10 L 13.707031 10 C 12.846171 7.1090112 10.170669 5 7 5 z M 7 9 C 8.657 9 10 10.343 10 12 C 10 13.657 8.657 15 7 15 C 5.343 15 4 13.657 4 12 C 4 10.343 5.343 9 7 9 z"></path></svg>
+        </i>
+    </a>
+    
+    
+    <!-- account button (display: none) -->
+    <a href="dashboard.html" class="accbtnmobile-a accbtnmobile-a-dashboard" style="display: none;">
+        <i class="accbtnmobile-i">
+            <svg class="accbtnmobile-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 12 3 A 4 4 0 0 0 8 7 A 4 4 0 0 0 12 11 A 4 4 0 0 0 16 7 A 4 4 0 0 0 12 3 z M 9.4355469 14.263672 C 6.4565469 14.814672 3 16.228 3 18.5 L 3 21 L 21 21 L 21 18.5 C 21 16.228 17.543453 14.813672 14.564453 14.263672 L 12 16.828125 L 9.4355469 14.263672 z"></path></svg>
+        </i>
+    </a>
+    
+    
+    
+    
+    
+</nav>     
+        
+
+ 
+    
+    
+    
+<section class="page page--contact-us">
+    <div class="equlizer-block equlizer-block--title">
+        <span class=" equlizer equlizer--1"></span>
+        <span class="equlizer equlizer--2"></span>
+        <span class="equlizer equlizer--3"></span>
+        <span class="equlizer equlizer--4"></span>
+        <span class="equlizer equlizer--5"></span>
+        <span class=" equlizer equlizer--1"></span>
+        <span class="equlizer equlizer--2"></span>
+    </div>
+    <h1 class="page__title">Contacts</h1>
+    <ul class="breadcrumbs">
+        <li class="breadcrumb">
+            <a href="index.html" class="breadcrumb__link">Main</a>
+        </li>
+        <li class="breadcrumb">
+            <a href="support.html" class="breadcrumb__link">Support</a>
+        </li>
+    </ul>
+
+    <div class="nav-top__soc text-center">
+        <a href="tg://resolve?domain=SolidETH" target="_blank" class="soc-top__link soc-top__link--telegram">
+            <svg class="soc-top__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 20.302734 2.984375 C 20.013769 2.996945 19.748583 3.080055 19.515625 3.171875 C 19.300407 3.256634 18.52754 3.5814726 17.296875 4.0976562 C 16.06621 4.61384 14.435476 5.2982348 12.697266 6.0292969 C 9.2208449 7.4914211 5.314238 9.1361259 3.3125 9.9785156 C 3.243759 10.007156 2.9645852 10.092621 2.65625 10.328125 C 2.3471996 10.564176 2.0039062 11.076462 2.0039062 11.636719 C 2.0039062 12.088671 2.2295201 12.548966 2.5019531 12.8125 C 2.7743861 13.076034 3.0504903 13.199244 3.28125 13.291016 L 3.28125 13.289062 C 4.0612776 13.599827 6.3906939 14.531938 6.9453125 14.753906 C 7.1420423 15.343433 7.9865895 17.867278 8.1875 18.501953 L 8.1855469 18.501953 C 8.3275588 18.951162 8.4659791 19.243913 8.6582031 19.488281 C 8.7543151 19.610465 8.8690398 19.721184 9.0097656 19.808594 C 9.0637596 19.842134 9.1235454 19.868148 9.1835938 19.892578 C 9.191962 19.896131 9.2005867 19.897012 9.2089844 19.900391 L 9.1855469 19.894531 C 9.2029579 19.901531 9.2185841 19.911859 9.2363281 19.917969 C 9.2652427 19.927926 9.2852873 19.927599 9.3242188 19.935547 C 9.4612233 19.977694 9.5979794 20.005859 9.7246094 20.005859 C 10.26822 20.005859 10.601562 19.710937 10.601562 19.710938 L 10.623047 19.695312 L 12.970703 17.708984 L 15.845703 20.369141 C 15.898217 20.443289 16.309604 21 17.261719 21 C 17.829844 21 18.279025 20.718791 18.566406 20.423828 C 18.853787 20.128866 19.032804 19.82706 19.113281 19.417969 L 19.115234 19.416016 C 19.179414 19.085834 21.931641 5.265625 21.931641 5.265625 L 21.925781 5.2890625 C 22.011441 4.9067171 22.036735 4.5369631 21.935547 4.1601562 C 21.834358 3.7833495 21.561271 3.4156252 21.232422 3.2226562 C 20.903572 3.0296874 20.591699 2.9718046 20.302734 2.984375 z M 19.908203 5.1738281 C 19.799442 5.7198576 17.33401 18.105877 17.181641 18.882812 L 13.029297 15.041016 L 10.222656 17.414062 L 11 14.375 C 11 14.375 16.362547 8.9468594 16.685547 8.6308594 C 16.945547 8.3778594 17 8.2891719 17 8.2011719 C 17 8.0841719 16.939781 8 16.800781 8 C 16.675781 8 16.506016 8.1197812 16.416016 8.1757812 C 15.272368 8.8887854 10.401283 11.664685 8.0058594 13.027344 C 7.8617016 12.96954 5.6973962 12.100458 4.53125 11.634766 C 6.6055146 10.76177 10.161156 9.2658083 13.472656 7.8730469 C 15.210571 7.142109 16.840822 6.4570977 18.070312 5.9414062 C 19.108158 5.5060977 19.649538 5.2807035 19.908203 5.1738281 z M 17.152344 19.025391 C 17.152344 19.025391 17.154297 19.025391 17.154297 19.025391 C 17.154252 19.025621 17.152444 19.03095 17.152344 19.03125 C 17.153615 19.024789 17.15139 19.03045 17.152344 19.025391 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path>
+            </svg>
+        </a>
+        <a href="https://twitter.com/SolidETH_org" target="_blank" class="soc-top__link soc-top__link--twitter">
+            <svg class="soc-top__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"></path>
+            </svg>
+        </a>
+        
+    </div>
+</section>
+<div class="contacts">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="address-block address-block--email">
+                    <a href="cdn-cgi/l/email-protection.html#6b181e1b1b04191f2b0819121b1f04030a050f184504190c"><span class="__cf_email__" data-cfemail="22515752524d50566241505b52564d4a434c46510c4d5045">[email&#160;protected]</span></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="address-block address-block--address text-no text--sm-no">
+                    <a href="https://etherscan.io/address/" target="_blank">Smart contract</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    <div id="map" class="g-map" style="position: relative; overflow: hidden; height: 192px;">
+        <div style="height: 100%;width: 100%;position: absolute;top: 0px;left: 0px;background-color: #f2f2f2;">
+            <div class="gm-style" style="position: absolute;z-index: 0;top: 32px;left: 32px;right: 32px;bottom: 32px;padding: 0px;border-width: 0px;margin: 0px;background: url(logo/logo_wide_grey.svg) center center no-repeat;background-size: contain;">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 contact-form" style="margin-top: 0; box-shadow: none;">
+                <form action="https://SolidETH.org/contact-us" class="contact-form-row" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+
+                    <input type="text" name="d0ntf1llth1s1n" value=" " class="default-form" style="display:none" />
+                    <h2 class="page__title page__title--3 text-center">Write us</h2>
+          
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" name="name" value="" id="contact_name" placeholder="Name" class="input input--block name" />
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="email" value="" id="contact_email" placeholder="Email" class="input input--block email" />
+
+                        </div>
+                        <div class="col-md-12">
+                            <textarea name="message" cols="40" rows="10" id="contact_message" placeholder="Message" class="input input--block message"></textarea>
+                            
+                        </div>
+                    </div>
+                    <div class="captcha">
+                        <input type="hidden" name="recaptcha_response_field" value="1" />
+                        <div class="g-recaptcha" data-sitekey=""></div>
+                        <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../www.google.com/recaptcha/api9201.js?hl=ru" async defer></script>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn--big" name="contact-submit" value="1" style="background: #4cd964;">SEND NOW</button>
+                    </div>
+        
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="instruments" style="display: none;">
+    <div class="container" style="margin-top: 0;">
+        <div class="row">
+        
+            <!--
+            <a href="https://ethereum.org/" target="_blank"><img src="./assets/img/new/i_ethereum.png" alt="" class="instrument__img"></a>
+            <a href="https://metamask.io/" target="_blank"><img src="./assets/img/new/i_metamask.svg" alt="" class="instrument__img" style="width: auto; height: 24px;"></a>
+            <a href="https://myetherwallet.com/" target="_blank"><img src="./assets/img/new/i_myetherwallet.svg" alt="" class="instrument__img" style="width: auto; height: 24px;"></a>
+            <a href="https://jaxx.io/" target="_blank"><img src="./assets/img/new/i_jaxxliberty.svg" alt="" class="instrument__img" style="width: auto; height: 24px;"></a>
+            <a href="https://trustwallet.com/" target="_blank"><img src="./assets/img/new/i_trustwallet.svg" alt="" class="instrument__img" style="width: auto; height: 24px;"></a>
+            -->
+      
+        </div>
+    </div>
+</div>
+
+<footer class="footer js-animate hide-beforeanimate" style="opacity: 1;">
+    <div class="container text-center" style="margin-top: 0;">
+        <nav class="bottom-menu js-menu">
+            <ul>
+                <li class="bottom-menu__item first"><a href="index.html" class="bottom-menu__link">Main</a></li>
+                <li class="bottom-menu__item" style="display: none;"><a href="tg://resolve?domain=SolidETH" target="_blank" class="bottom-menu__link"><i class="fab fa-telegram-plane"></i></a></li>
+                <li class="bottom-menu__item" style="display: none;"><a href="https://twitter.com/SolidETH_io" target="_blank" class="bottom-menu__link"><i class="fab fa-twitter"></i></a></li>
+                <li class="bottom-menu__item"><a href="howitworks.html" class="bottom-menu__link">How it works</a></li>
+                <li class="bottom-menu__item"><a href="faq.html" class="bottom-menu__link">FAQ</a></li>
+                <li class="bottom-menu__item"><a href="faqeth.html" class="bottom-menu__link">Ethereum FAQ</a></li>
+                <li class="bottom-menu__item current parent"><a href="support.html" class="bottom-menu__link current-link">Support</a></li>
+                
+                
+                <!-- Если НЕ залогинен, то показываем эти ссылки: -->
+                <li class="bottom-menu__item"><a href="signup.html" class="bottom-menu__link">Sign up</a></li>
+                <li class="bottom-menu__item last"><a href="login.html" class="bottom-menu__link">Login</a></li>                
+            
+                <!-- если ЗАлогинен, то показываем эти (сейчас обе скрыты через style="display:none;"): -->
+                <li class="bottom-menu__item" style="display:none;"><a href="reflinks.html" class="bottom-menu__link">Ref links</a></li>
+                <li class="bottom-menu__item last" style="display:none;"><a href="dashboard.html" class="bottom-menu__link">Account</a></li>                
+            
+                
+            
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4 text-center">
+                <div class="footer__logo">
+                    <img class="responsive-img" src="logo/logo_large_dark.svg" alt="" width="236"  height="118">
+                </div>
+                <p class="text  text--white" style="display: none;"><b>SolidETH</b></p>
+                <p class="text  text--white text--sm">
+                    The easiest and fastest way to make money in crypto industry!                </p>
+            </div>
+        </div>
+        
+        
+        <div class="nav-top__soc">
+            
+            <style>
+                .pagesfootersocbutton_a {
+                    background: #222222;
+                    padding: 12px;
+                }
+                .pagesfootersocbutton_a_bgchat {
+                    background: none;
+                }
+                .pagesfootersocbutton_i {
+                    position: relative;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    fill: #2094fa;
+                }
+                .pagesfootersocbutton_bgchat {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    fill: #2094fa;
+                }
+                .pagesfootersocbutton_a:hover .pagesfootersocbutton_bgchat {
+                    fill: #f2f4ff;
+                }
+                .pagesfootersocbutton_i_chat {
+                    fill: #222222;
+                }
+                .pagesfootersocbutton_a:hover .pagesfootersocbutton_i_chat {
+                    fill: #2094fa;
+                }
+            </style>
+            <a href="tg://resolve?domain=SolidETHchat" target="_blank" class="soc-top__link soc-top__link--fb-no soc-top__link--footer pagesfootersocbutton_a pagesfootersocbutton_a_bgchat" style="margin-left: 0;">
+                <i class="pagesfootersocbutton_bgchat">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><path d="M48,24c0,13.3-10.7,24-24,24c-4.3,0-8.3-1.1-11.7-3.1L0,48l3.1-12.3C1.1,32.3,0,28.3,0,24C0,10.7,10.7,0,24,0S48,10.7,48,24	z M38.5,45.6L48,48l-2.4-9.5C43.7,41.3,41.3,43.7,38.5,45.6z"/></svg>
+                </i>
+                <i class="pagesfootersocbutton_i pagesfootersocbutton_i_chat">
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 20.302734 2.984375 C 20.013769 2.996945 19.748583 3.080055 19.515625 3.171875 C 19.300407 3.256634 18.52754 3.5814726 17.296875 4.0976562 C 16.06621 4.61384 14.435476 5.2982348 12.697266 6.0292969 C 9.2208449 7.4914211 5.314238 9.1361259 3.3125 9.9785156 C 3.243759 10.007156 2.9645852 10.092621 2.65625 10.328125 C 2.3471996 10.564176 2.0039062 11.076462 2.0039062 11.636719 C 2.0039062 12.088671 2.2295201 12.548966 2.5019531 12.8125 C 2.7743861 13.076034 3.0504903 13.199244 3.28125 13.291016 L 3.28125 13.289062 C 4.0612776 13.599827 6.3906939 14.531938 6.9453125 14.753906 C 7.1420423 15.343433 7.9865895 17.867278 8.1875 18.501953 L 8.1855469 18.501953 C 8.3275588 18.951162 8.4659791 19.243913 8.6582031 19.488281 C 8.7543151 19.610465 8.8690398 19.721184 9.0097656 19.808594 C 9.0637596 19.842134 9.1235454 19.868148 9.1835938 19.892578 C 9.191962 19.896131 9.2005867 19.897012 9.2089844 19.900391 L 9.1855469 19.894531 C 9.2029579 19.901531 9.2185841 19.911859 9.2363281 19.917969 C 9.2652427 19.927926 9.2852873 19.927599 9.3242188 19.935547 C 9.4612233 19.977694 9.5979794 20.005859 9.7246094 20.005859 C 10.26822 20.005859 10.601562 19.710937 10.601562 19.710938 L 10.623047 19.695312 L 12.970703 17.708984 L 15.845703 20.369141 C 15.898217 20.443289 16.309604 21 17.261719 21 C 17.829844 21 18.279025 20.718791 18.566406 20.423828 C 18.853787 20.128866 19.032804 19.82706 19.113281 19.417969 L 19.115234 19.416016 C 19.179414 19.085834 21.931641 5.265625 21.931641 5.265625 L 21.925781 5.2890625 C 22.011441 4.9067171 22.036735 4.5369631 21.935547 4.1601562 C 21.834358 3.7833495 21.561271 3.4156252 21.232422 3.2226562 C 20.903572 3.0296874 20.591699 2.9718046 20.302734 2.984375 z M 19.908203 5.1738281 C 19.799442 5.7198576 17.33401 18.105877 17.181641 18.882812 L 13.029297 15.041016 L 10.222656 17.414062 L 11 14.375 C 11 14.375 16.362547 8.9468594 16.685547 8.6308594 C 16.945547 8.3778594 17 8.2891719 17 8.2011719 C 17 8.0841719 16.939781 8 16.800781 8 C 16.675781 8 16.506016 8.1197812 16.416016 8.1757812 C 15.272368 8.8887854 10.401283 11.664685 8.0058594 13.027344 C 7.8617016 12.96954 5.6973962 12.100458 4.53125 11.634766 C 6.6055146 10.76177 10.161156 9.2658083 13.472656 7.8730469 C 15.210571 7.142109 16.840822 6.4570977 18.070312 5.9414062 C 19.108158 5.5060977 19.649538 5.2807035 19.908203 5.1738281 z M 17.152344 19.025391 C 17.152344 19.025391 17.154297 19.025391 17.154297 19.025391 C 17.154252 19.025621 17.152444 19.03095 17.152344 19.03125 C 17.153615 19.024789 17.15139 19.03045 17.152344 19.025391 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path></svg>
+                </i>
+            </a>
+            <a href="tg://resolve?domain=SolidETH" target="_blank" class="soc-top__link soc-top__link--fb-no soc-top__link--footer pagesfootersocbutton_a">
+                <i class="pagesfootersocbutton_i">
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 20.302734 2.984375 C 20.013769 2.996945 19.748583 3.080055 19.515625 3.171875 C 19.300407 3.256634 18.52754 3.5814726 17.296875 4.0976562 C 16.06621 4.61384 14.435476 5.2982348 12.697266 6.0292969 C 9.2208449 7.4914211 5.314238 9.1361259 3.3125 9.9785156 C 3.243759 10.007156 2.9645852 10.092621 2.65625 10.328125 C 2.3471996 10.564176 2.0039062 11.076462 2.0039062 11.636719 C 2.0039062 12.088671 2.2295201 12.548966 2.5019531 12.8125 C 2.7743861 13.076034 3.0504903 13.199244 3.28125 13.291016 L 3.28125 13.289062 C 4.0612776 13.599827 6.3906939 14.531938 6.9453125 14.753906 C 7.1420423 15.343433 7.9865895 17.867278 8.1875 18.501953 L 8.1855469 18.501953 C 8.3275588 18.951162 8.4659791 19.243913 8.6582031 19.488281 C 8.7543151 19.610465 8.8690398 19.721184 9.0097656 19.808594 C 9.0637596 19.842134 9.1235454 19.868148 9.1835938 19.892578 C 9.191962 19.896131 9.2005867 19.897012 9.2089844 19.900391 L 9.1855469 19.894531 C 9.2029579 19.901531 9.2185841 19.911859 9.2363281 19.917969 C 9.2652427 19.927926 9.2852873 19.927599 9.3242188 19.935547 C 9.4612233 19.977694 9.5979794 20.005859 9.7246094 20.005859 C 10.26822 20.005859 10.601562 19.710937 10.601562 19.710938 L 10.623047 19.695312 L 12.970703 17.708984 L 15.845703 20.369141 C 15.898217 20.443289 16.309604 21 17.261719 21 C 17.829844 21 18.279025 20.718791 18.566406 20.423828 C 18.853787 20.128866 19.032804 19.82706 19.113281 19.417969 L 19.115234 19.416016 C 19.179414 19.085834 21.931641 5.265625 21.931641 5.265625 L 21.925781 5.2890625 C 22.011441 4.9067171 22.036735 4.5369631 21.935547 4.1601562 C 21.834358 3.7833495 21.561271 3.4156252 21.232422 3.2226562 C 20.903572 3.0296874 20.591699 2.9718046 20.302734 2.984375 z M 19.908203 5.1738281 C 19.799442 5.7198576 17.33401 18.105877 17.181641 18.882812 L 13.029297 15.041016 L 10.222656 17.414062 L 11 14.375 C 11 14.375 16.362547 8.9468594 16.685547 8.6308594 C 16.945547 8.3778594 17 8.2891719 17 8.2011719 C 17 8.0841719 16.939781 8 16.800781 8 C 16.675781 8 16.506016 8.1197812 16.416016 8.1757812 C 15.272368 8.8887854 10.401283 11.664685 8.0058594 13.027344 C 7.8617016 12.96954 5.6973962 12.100458 4.53125 11.634766 C 6.6055146 10.76177 10.161156 9.2658083 13.472656 7.8730469 C 15.210571 7.142109 16.840822 6.4570977 18.070312 5.9414062 C 19.108158 5.5060977 19.649538 5.2807035 19.908203 5.1738281 z M 17.152344 19.025391 C 17.152344 19.025391 17.154297 19.025391 17.154297 19.025391 C 17.154252 19.025621 17.152444 19.03095 17.152344 19.03125 C 17.153615 19.024789 17.15139 19.03045 17.152344 19.025391 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path></svg>
+                </i>
+            </a>
+            <a href="https://twitter.com/SolidETH_org" target="_blank" class="soc-top__link soc-top__link--footer pagesfootersocbutton_a">
+                <i class="pagesfootersocbutton_i">
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"></path></svg>
+                </i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCPU7OIxlVb1f0GfzYb02z9g" target="_blank" class="soc-top__link soc-top__link--footer pagesfootersocbutton_a lang_menu_yt_link lang_menu_yt_link_en">
+                <i class="pagesfootersocbutton_i">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path></svg>
+                </i>
+            </a>
+        </div>
+        <div class="add-menu">
+            <ul class="add-menu__list add-menu__list--footer">
+                <li class="add-menu__item"><a href="https://rinkeby.etherscan.io/address/0xcb2c11ca6c2b2617b4f7efc7bd4347375ecb54ce" target="_blank" class="add-menu__link add-menu__link__address">Address</a></li>
+                <li class="add-menu__item"><a href="terms.html" target="_blank" class="add-menu__link add-menu__link__terms">Terms&nbsp;&&nbsp;conditions</a></li>
+                <li class="add-menu__item"><a href="https://rinkeby.etherscan.io/address/0xcb2c11ca6c2b2617b4f7efc7bd4347375ecb54ce#code" class="add-menu__link add-menu__link__opensourse"><!--Support-->open sourse</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container clearfix" style="margin-top: 0;">
+      
+            <p class="copy-right__text" >
+                Copyright &copy; SolidETH.org
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+    
+<div id="includedfooter">
+</div>    
+<button class="up"></button>
+
+
+
+          
+
+
+<script async src="../waust.at/m.js"></script>
+
+
+
+
+<style>
+.sh_btn {
+    top: 75%;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    min-width: 0;
+    min-height: 0;
+    box-shadow: none;
+    border-radius: 0 3px 3px 0;
+    background: #4cd964;
+}    
+.sh_btn:hover {
+    box-shadow: none;
+    background: #4cd964;
+}
+ 
+.sh_btn:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 0 3px 3px 0;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.sh_btn:hover:before {
+    background: rgba(0, 0, 0, 0.14);
+}
+    
+.sh_btn:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    height: 16px;
+    width: 16px;
+    background: url(assets/img/new/siteheart_img.svg) no-repeat;
+    background-size: 16px 16px;
+}
+    
+.sh_logo_img {
+    display: none;
+}
+    
+.sh_title_text {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: auto;
+    bottom: 0;
+    margin: 0 !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    display: block;
+    float: none !important;
+    border: none !important;
+    width: auto;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    padding: 0 !important;
+    line-height: 24px !important;
+    font-size: 12px !important;
+    color: #888888 !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: 0.2s;
+}
+.sh_btn:hover .sh_title_text {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+    
+@media (max-width: 1000px) {
+    .sh_btn {
+        left: auto;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .sh_btn:before {
+        border-radius: 3px 0 0 3px;
+    }
+    .sh_title_text {
+        left: auto;
+        right: 100%;
+    }
+}
+</style>
+<!-- Start SiteHeart code -->
+<!--
+<script>
+(function(){
+var widget_id = 905129;
+_shcp =[{widget_id : widget_id}];
+var lang =(navigator.language || navigator.systemLanguage 
+|| navigator.userLanguage ||"en")
+.substr(0,2).toLowerCase();
+var url ="widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
+var hcc = document.createElement("script");
+hcc.type ="text/javascript";
+hcc.async =true;
+hcc.src =("https:"== document.location.protocol ?"https":"http")
++"://"+ url;
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+</script>
+-->
+<!-- End SiteHeart code -->
+
+
+
+
+
+
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym"); ym(53083243, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/53083243" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+
+
+
+
+<!-- style for JIVOSITE -->
+<style>
+#jvlabelWrap {
+    right: 20%;
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    min-width: 32px;
+    background: #4cd964 url(assets/img/new/siteheart_img.svg) center center no-repeat !important;
+    background-size: 24px 24px !important;
+    border-radius: 6px 6px 0 0;
+    border-top-left-radius: 6px !important;
+        border-top-right-radius: 6px !important;
+}
+.text_eD {
+    display: none;
+}    
+.leafCont_2L {
+    display: none;
+}
+    
+    
+#jcont {
+    right: 48px !important;
+}
+    
+.headerBox_2k {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+.header_2f {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}    
+.headerBox_3s {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+    
+.leaf_25 {
+    display: none !important;
+}
+    
+.copy_2W {
+    display: none !important;     
+}
+    
+.labelStatus_3J {
+    display: none !important;
+}
+</style>
+<!-- END: style for JIVOSITE -->
+<!-- BEGIN JIVOSITE CODE {literal}
+<script type='text/javascript'>
+(function(){ var widget_id = 'MZcymahaMD';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+--> 
+<!-- {/literal} END JIVOSITE CODE -->
+
+
+    
+</body>
+
+<!-- Mirrored from SolidETH.org/support.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 13:15:40 GMT -->
+</html> 

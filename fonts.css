@@ -1,0 +1,77 @@
+
+@font-face {
+	font-family: 'Museo Cyrl';
+	src: url('../fonts/museo_cyrl.html');
+	src: url('../fonts/museo_cyrld41d.html?#iefix') format('embedded-opentype'),
+		 url('../fonts/museo_cyrl.woff') format('woff'),
+		 url('../fonts/museo_cyrl.ttf') format('truetype'),
+		 url('../fonts/museo_cyrl.svg#Museo Cyrl') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Museo Cyrl';
+	src: url('../fonts/museo_cyrl_300.eot');
+	src: url('../fonts/museo_cyrl_300d41d.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/museo_cyrl_300.woff') format('woff'),
+		 url('../fonts/museo_cyrl_300.ttf') format('truetype'),
+		 url('../fonts/museo_cyrl_300.svg#Museo Cyrl') format('svg');
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Museo Cyrl';
+	src: url('../fonts/museo_cyrl_500.eot');
+	src: url('../fonts/museo_cyrl_500d41d.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/museo_cyrl_500.woff') format('woff'),
+		 url('../fonts/museo_cyrl_500.ttf') format('truetype'),
+		 url('../fonts/museo_cyrl_500.svg#Museo Cyrl') format('svg');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Museo Cyrl';
+	src: url('../fonts/museo_cyrl_500.eot');
+	src: url('../fonts/museo_cyrl_500d41d.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/museo_cyrl_500.woff') format('woff'),
+		 url('../fonts/museo_cyrl_500.ttf') format('truetype'),
+		 url('../fonts/museo_cyrl_500.svg#Museo Cyrl') format('svg');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular-webfont.html') format('woff2'),
+		 url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-ExtraBold-webfont.html') format('woff2'),
+		 url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+	font-style: normal;
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Light-webfont.html') format('woff2'),
+		 url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Semibold-webfont.html') format('woff2'),
+		 url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+	font-style: normal;
+	font-weight: 600;
+}

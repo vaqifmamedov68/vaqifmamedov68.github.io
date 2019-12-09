@@ -1,0 +1,60 @@
+.c-red {
+	color: #ff3b30;
+}
+.c-yellow {
+	color: #ffcc00;
+}
+.c-orange {
+	color: #ff9403;
+}
+.c-blue {
+	color: #0079ff !important;
+}
+.c-white {
+	color: #fff !important;
+}
+.c-gold {
+	color: #cda05b;
+}
+
+.c-dark_red {
+	color: #ff3b30 !important;
+}
+.c-dark_green {
+	color: #04de71 !important;
+}
+.c-dark_blue {
+	color: #2094fa !important;
+}
+.c-dark_yellow {
+	color: #ffe620 !important;
+}
+
+
+.c-bg_dark_white {
+    background: #f2f4ff;
+}
+
+
+.f-bold {
+	font-weight: 700;
+}
+.t-underline {
+	text-decoration: underline;
+}
+.t-upper {
+	text-transform: uppercase;
+}
+.t-center {
+	text-align: center;
+}
+.t-right {
+	text-align: right
+}
+.t-left {
+	text-align: left;
+}
+
+.mrt40 {
+	margin-top: 40px;
+}

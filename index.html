@@ -1,0 +1,2433 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from SolidETH.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 12:18:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n); console.log(t.src);}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="content-language" content="en">
+    
+    <title>SolidETH - The easiest and fastest way to make money in crypto industry</title>
+    <meta name="description" content="The first risk-free blockchain project">
+    <meta name="keywords" content="SolidETH, crypto, hands, mlm, multilevelmarketing, multi, level, marketing, blockchain, cryptocurrency, ethereum, eth, smartcontract, smart, contract, earn, income, profit, invest, investment, investing, project, withoutrisk, risk">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!--
+    <meta property="og:locale" content="en_EN"/>
+    -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="SolidETH - The easiest and fastest way to make money in crypto industry"/>
+    <meta property="og:description" content="The first risk-free blockchain project"/>
+    <meta property="og:image" content="logo/share_start.png"/>
+    <meta property="og:url" content="index.html"/>
+    <meta property="og:site_name" content="SolidETH"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SolidETH_org">
+    <meta name="twitter:title" content="SolidETH - The easiest and fastest way to make money in crypto industry">
+    <meta name="twitter:description" content="The first risk-free blockchain project">
+    <meta name="twitter:image" content="logo/share_start.png">
+    
+    <meta itemprop="name" content="SolidETH - The easiest and fastest way to make money in crypto industry"/>
+    <meta itemprop="description" content="The first risk-free blockchain project"/>
+    <meta itemprop="image" content="logo/share_start.png"/>
+    
+    <meta itemscope itemtype="http://schema.org/Article">
+    <meta itemprop="headline" content="SolidETH - The easiest and fastest way to make money in crypto industry">
+    <meta itemprop="description" content="The first risk-free blockchain project">
+    <meta itemprop="image" content="logo/share_start.png">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!--
+    <link rel="icon" href="./favicon.svg" sizes="any" type="image/svg+xml">
+    -->
+    
+    
+    <link rel="stylesheet" href="assets/js/selectize/css/selectize.bootstrap3.css" />
+
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/js/venobox/venobox68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/js/lightbox/css/lightbox68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/css/core3fa9.css?1494886465">
+    <link rel="stylesheet" href="assets/css/jrange/css/ion.rangeSlider68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/css/jrange/css/ion.rangeSlider.skinFlat68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/css/new_v27383.css?1507840484">
+    <link rel="stylesheet" href="assets/css/animation98b9.css?1498309791">
+    <link rel="stylesheet" href="assets/css/pagesd2fd.css?1507001790">
+    <link rel="stylesheet" href="assets/css/mobile3fa9.css?1494886465">
+    <link rel="stylesheet" href="assets/css/mobile_new98b9.css?1498309791">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/venobox/venobox.min68f8.js?1485983083"></script>
+    <script src="assets/js/lightbox/js/lightbox68f8.js?1485983083"></script>
+    <script src="assets/js/core0b03.js?1507873861"></script>
+    <script src="assets/js/bootstrap.min68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/jquery.vide68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/gmap68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/venobox/venobox.min68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/jrange/js/ion.rangeSlider68f8.js?1485983083"></script>
+
+
+
+
+    <link rel="stylesheet" href="assets/css/basef660.css?1496448411">
+    <link rel="stylesheet" href="assets/css/slick/slick68f8.css?1485983083">
+    <script type="text/javascript" src="assets/js/jquery.countto68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/slick/slick68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/marquee68f8.js?1485983083"></script>
+    <script src="assets/js/amcharts/amcharts.js" type="text/javascript"></script>
+    <script src="assets/js/amcharts/serial.js" type="text/javascript"></script>
+    <script src="assets/js/amcharts/amstock.js" type="text/javascript"></script>
+    <script src="assets/js/amcharts/light.js" type="text/javascript"></script>
+    <script src="assets/js/chart.js" type="text/javascript"></script>
+    <script src="assets/js/moment.js" type="text/javascript"></script>
+    <script src="assets/js/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <!--<script src="./assets/js/trading_v2.js" type="text/javascript"></script>-->
+    
+    <script src="assets/js/selectize/js/standalone/selectize.min.js"></script>
+    
+    
+    <script>
+        const btcPrice=49.101508106602;
+        const usdtPrice=0.006702884752948;
+    </script>   
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="non-animation bodyaccountno" id="top">
+<style>
+    .langbutton-en {
+
+    }
+    .langbutton-en:before {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -3px;
+        margin-right: 12px;
+        display: block;
+        height: 6px;
+        width: 6px;
+        background: #888888;
+        background-n0: rgba(0, 0, 0, 0.14);
+        border-radius: 3px;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.2s;
+    }
+    .langbutton-en:hover:before {
+        visibility: hidden;
+        opacity: 0;
+    }
+</style>
+
+
+<div class="langbuttons-block " style="margin-top: -192px;">
+    
+    <div class="langbutton langbutton-en">
+        <span class="langbutton-descr">English</span>
+        <a href="index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/en.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-cn">
+        <span class="langbutton-descr">中文</span>
+        <a href="cn/index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/cn.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-ru">
+        <span class="langbutton-descr">Русский</span>
+        <a href="ru/index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/ru.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-es">
+        <span class="langbutton-descr">Español</span>
+        <a href="es/index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/es.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-it">
+        <span class="langbutton-descr">Italiano</span>
+        <a href="it/index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/it.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-de">
+        <span class="langbutton-descr">Deutsch</span>
+        <a href="de/index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/de.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-fr">
+        <span class="langbutton-descr">Français</span>
+        <a href="fr/index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/fr.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-hi">
+        <span class="langbutton-descr">हिंदी</span>
+        <a href="hi/index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/hi.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-ja">
+        <span class="langbutton-descr">日本語</span>
+        <a href="ja/index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/ja.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-kr">
+        <span class="langbutton-descr">한국어</span>
+        <a href="kr/index.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/kr.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    
+    
+    
+    <div class="langbutton langbutton-more">
+        <span class="langbutton-descr">other</span>
+        <a id="langbutton-more-a" class="langbutton-a langbutton-more-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/more.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+<div id="lbother-section" class="lbother-section">
+    <a id="lbother-closebtn" class="lbother-closebtn">
+        <i class="lbother-closebtn-i">
+            <svg fill="#007aff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 5.7070312 4.2929688 L 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 L 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 L 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 L 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path>
+            </svg>
+        </i>
+    </a>
+    <div class="lbother-contentblock">
+        <div class="row">
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/en.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">English</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="cn/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/cn.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">中文</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ru/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ru.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Русский</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="es/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/es.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Español</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="it/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/it.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Italiano</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="de/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/de.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Deutsch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="fr/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/fr.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Français</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="hi/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/hi.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">हिंदी</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ja/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ja.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">日本語</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="kr/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/kr.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">한국어</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4" style="display: none;">
+                <div class="lbother-langblock">
+                    <a href="ar/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ar.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">العربية</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="bn/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" >
+                            <img src="assets/img/new/flags/bn.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">বাংলা</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="id/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/id.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Bahasa Indonesia</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="vi/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/vi.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Tiếng Việt</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            
+            
+           <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="pt/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/pt.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Português</span>
+                    </a>
+                </div>
+            </div> 
+            
+            
+            
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="nl/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/nl.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Nederlands</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="fl/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/fl.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Filipino</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ms/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ms.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Bahasa Melayu</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="uk/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/uk.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Українська Мова</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="kk/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/kk.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Қазақ Тілі</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="tr/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/tr.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Türkçe</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="cs/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/cs.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Čeština</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="pl/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/pl.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Język Polski</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="hu/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/hu.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Magyar Nyelv</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ro/index.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ro.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Limba română</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    document.getElementById('langbutton-more-a').onclick = function() {
+        document.getElementById('lbother-section').classList.add('lbother-section-active');
+    }
+</script>
+
+<script type="text/javascript">
+    document.getElementById('lbother-closebtn').onclick = function() {
+        document.getElementById('lbother-section').classList.remove('lbother-section-active');
+    }
+</script>
+
+
+<div class="loader-wrapper" id="loader-wrapper" style="display: none;">
+    <div class="loader">
+        <div class="loader__inner loader__inner--1"></div>
+        <div class="loader__inner loader__inner--2"></div>
+        <div class="loader__inner loader__inner--3"></div>
+		<div class="loader__inner loader__inner--4"></div>
+    </div>
+</div>
+
+<nav class="top-menu  js-topmenu top-menu--light top-menu--landing">
+    <div class="clearfix">
+        <div class="row">
+            <div class="col-md-3" style="display: block; height: 60px;">
+                <a href="index.html" class="logo" style="display: block;height: 60px;vertical-align: middle;display: flex; margin-top: 0;">
+                    <div class="equlizer-block equlizer-block--white">
+                        <span class=" equlizer equlizer--1"></span>
+                        <span class="equlizer equlizer--2"></span>
+                        <span class="equlizer equlizer--3"></span>
+                        <span class="equlizer equlizer--4"></span>
+                        <span class="equlizer equlizer--5"></span>
+                    </div>
+                    <img class="main-light-logo main-light-logo-big" src="logo/logo_main.svg" alt="SolidETH" width="auto" height="44" style="width: auto;height: 44px;margin: auto;margin-left: 0;vertical-align: middle;">
+                    <img class="main-light-logo main-light-logo-small" src="logo/logo_icon.svg" alt="SolidETH" width="auto" height="44" style="width: auto;height: 44px;margin: auto;margin-left: 0;vertical-align: middle;">
+                </a>
+            </div>
+            <div class="col-md-9 top-menu__right">
+                <div class="nav-top">
+                    <ul class="nav-top__list">
+                        <li class="nav-top__item nav-top__item--bold first"><a href="index.html" class="nav-top__link nav-top__link--bold">Main</a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="tg://resolve?domain=SolidETHchat" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-telegram"></i></a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="tg://resolve?domain=SolidETH" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="https://twitter.com/SolidETH_org" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-twitter"></i></a></li>
+                        
+                        <li class="nav-top__item nav-top__item--bold lang_menu_yt_link lang_menu_yt_link_en"><a href="https://www.youtube.com/channel/UCPU7OIxlVb1f0GfzYb02z9g" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-youtube"></i></a></li>
+                        
+                        <li class="nav-top__item nav-top__item--bold"><a href="howitworks.html" class="nav-top__link nav-top__link--bold">How it works</a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="faq.html" class="nav-top__link nav-top__link--bold">FAQ</a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="faqeth.html" class="nav-top__link nav-top__link--bold">Ethereum FAQ</a></li>
+                        <li class="nav-top__item nav-top__item--bold last menu_demo"><a href="dashboard.html" target="_blank" class="nav-top__link nav-top__link--bold" style="color: #ff3b30;">Demo</a></li>
+                    </ul>
+                    <div class="languages" style="display: none;">
+                        <span class="language language--cur">
+                                RUS
+                        </span>
+                        <ul class="languages__list">
+                                <li><a href="index3322.html?lang=de" class="language">DE</a></li>
+                                <li><a href="index923c.html?lang=pt" class="language">POR</a></li>
+                                <li><a href="indexcf53.html?lang=it" class="language">IT</a></li>
+                                <li><a href="indexc69a.html?lang=es" class="language">ES</a></li>
+                                <li><a href="index9ed2.html?lang=en" class="language">ENG</a></li>
+                                <li><a href="index2139.html?lang=ru" class="language">RUS</a></li>
+                                <li><a href="indexe68f.html?lang=fr" class="language">FR</a></li>
+                                <li><a href="indexdb38.html?lang=cn" class="language">中文</a></li>
+                                <li><a href="index2296.html?lang=tr" class="language">TR</a></li>
+                                <li><a href="indexef8e.html?lang=hi" class="language">HI</a></li>
+                                <li><a href="indexe034.html?lang=vi" class="language">VI</a></li>
+                                <li><a href="indexc9e6.html?lang=ja" class="language">日本語</a></li>
+                                <li><a href="index7542.html?lang=ko" class="language">한국어</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-top__btns">
+                        
+                        
+                        <!-- если НЕ залогинен, то показываем эти кнопки: -->
+                                                    <a href="signup.html"  class="btn-no btn--red-no btn--sign-no btn--signup-no      btn btn--sign btn--signin" style="border-color: transparent;"><i class="fas fa-user-plus" style="border-color: transparent;"></i> Sign up</a>
+                            <a href="login.html" class="btn btn--sign btn--signin" style="border-color: transparent;"><i class="fas fa-sign-in-alt"></i> Login</a>
+                        
+                                                
+                        
+                    </div>
+                </div>
+            </div><!-- col-md-9 -->
+        </div><!-- row-->
+        
+        <a id="langbuttonmobile-a" class="langbuttonmobile-a mobile">
+            <i class="langbuttonmobile-i">
+                <img src="assets/img/new/flags/en.svg" class="langbuttonmobile-img">
+            </i>
+        </a>
+        <script type="text/javascript">
+            document.getElementById('langbuttonmobile-a').onclick = function() {
+                document.getElementById('lbother-section').classList.add('lbother-section-active');
+            }
+        </script>
+
+        
+        
+        <button class="show-menu mobile">
+                <span></span>
+        </button>
+    </div><!-- container -->
+    
+    
+    
+<!--signup and login buttons-->
+        <a href="signup.html" class="accbtnmobile-a accbtnmobile-a-signup">
+        <i class="accbtnmobile-i">
+            <svg class="accbtnmobile-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 12 3 A 4 4 0 0 0 8 7 A 4 4 0 0 0 12 11 A 4 4 0 0 0 16 7 A 4 4 0 0 0 12 3 z M 18 12 C 14.7 12 12 14.7 12 18 C 12 21.3 14.7 24 18 24 C 21.3 24 24 21.3 24 18 C 24 14.7 21.3 12 18 12 z M 11.050781 14.046875 C 7.8907812 14.308875 3 15.796 3 18.5 L 3 21 L 10.587891 21 C 10.211891 20.073 10 19.062 10 18 C 10 16.56 10.384781 15.213875 11.050781 14.046875 z M 17 15 L 19 15 L 19 17 L 21 17 L 21 19 L 19 19 L 19 21 L 17 21 L 17 19 L 15 19 L 15 17 L 17 17 L 17 15 z"></path></svg>
+        </i>
+    </a>
+    <a href="login.html" class="accbtnmobile-a accbtnmobile-a-login">
+        <i class="accbtnmobile-i">
+            <svg class="accbtnmobile-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 7 5 C 3.134 5 0 8.134 0 12 C 0 15.866 3.134 19 7 19 C 10.170669 19 12.846171 16.890989 13.707031 14 L 18 14 L 18 17 L 22 17 L 22 14 L 24 14 L 24 10 L 13.707031 10 C 12.846171 7.1090112 10.170669 5 7 5 z M 7 9 C 8.657 9 10 10.343 10 12 C 10 13.657 8.657 15 7 15 C 5.343 15 4 13.657 4 12 C 4 10.343 5.343 9 7 9 z"></path></svg>
+        </i>
+    </a>
+                                      
+    
+    
+</nav><!--end top menu-->
+
+   
+<section class="page page--lightblue page--userland t-center section_home">
+        
+    
+    <div class="section_home_block section_home_block_front">
+        <img class="section_home_block_img" src="logo/home/front.svg">
+    </div>
+    
+    <div class="section_home_block section_home_block_stats">
+        <div class="currencies_vs  currencies--userland section_home_block_stats_content">
+            <div class="currency">
+                <div class="currency__percent currency__percent--minus">total participants</div>
+                <div class="currency__data">
+                    <img src="assets/img/new/pa_icon_bar.png" width="21" alt="" class="currency__chart" style="display: none;"><i class="fas fa-user"></i> <span id="vs_line_total_user" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            
+            <div class="currency" style="display: none;">
+                <div class="currency__percent currency__percent--minus">1 level</div>
+                <div class="currency__data">
+                    <i class="fas fa-user"></i> <span id="vs_line_l1_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="currency" style="display: none;">
+                <div class="currency__percent currency__percent--minus">2 level</div>
+                <div class="currency__data">
+                    <i class="fas fa-user"></i> <span id="vs_line_l2_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="currency" style="display: none;">
+                <div class="currency__percent currency__percent--minus">3 level</div>
+                <div class="currency__data">
+                    <i class="fas fa-user"></i> <span id="vs_line_l3_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="currency" style="display: none;">
+                <div class="currency__percent currency__percent--minus">4 level</div>
+                <div class="currency__data">
+                    <i class="fas fa-user"></i> <span id="vs_line_l4_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="currency" style="display: none;">
+                <div class="currency__percent currency__percent--minus">5 level</div>
+                <div class="currency__data">
+                    <i class="fas fa-user"></i> <span id="vs_line_l5_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="currency" style="display: none;">
+                <div class="currency__percent currency__percent--minus">6 level</div>
+                <div class="currency__data">
+                    <i class="fas fa-user"></i> <span id="vs_line_l6_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="currency" style="display: none;">
+                <div class="currency__percent currency__percent--minus">7 level</div>
+                <div class="currency__data">
+                    <i class="fas fa-user"></i> <span id="vs_line_l7_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="currency" style="display: none;">
+                <div class="currency__percent currency__percent--minus">8 level</div>
+                <div class="currency__data">
+                    <i class="fas fa-user"></i> <span id="vs_line_l8_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            
+            
+            <div class="currency">
+                <div class="currency__percent currency__percent--minus">project years</div>
+                <div class="currency__data">
+                    <i class="fas fa-calendar-alt"></i> <span id="vs_project_days" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="currency">
+                <div class="currency__percent currency__percent--minus">total transactions</div>
+                <div class="currency__data">
+                    <i class="fas fa-chart-bar"></i> <span  id="vs_line_total_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+                </div>
+            </div>
+            <div class="currency">
+                <div class="currency__percent currency__percent--minus">total ETH</div>
+                <div class="currency__data">
+                    <i class="fab fa-ethereum"></i> <span id="vs_ETH_amuont" class="currency__value"><i class="fas fa-ellipsis-h"></i></span> <span class="currency__pair">ETH</span>
+                </div>
+            </div>
+            <div class="currency">
+                <div class="currency__percent currency__percent--minus">equivalent to BTC</div>
+                <div class="currency__data">
+                    <i class="fab fa-bitcoin"></i> <span id="vs_BTC_amuont" class="currency__value"><i class="fas fa-ellipsis-h"></i></span> <span class="currency__pair">BTC</span>
+                </div>
+            </div>
+            <div class="currency">
+                <div class="currency__percent currency__percent--minus">equivalent to USD</div>
+                <div class="currency__data">
+                    <i class="fas fa-dollar-sign"></i> <span id="vs_USDT_amuont" class="currency__value"><i class="fas fa-ellipsis-h"></i></span> <span class="currency__pair">USD</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section_home_block section_home_block_stats_after">
+        <img class="section_home_block_img" src="logo/home/stats_after.svg">
+    </div>
+    
+    
+    <div class="section_home_block section_home_block_rays" style="display: none;">
+        <img class="section_home_block_img" src="logo/home/rays_0.svg">
+    </div>
+    
+    <div class="user-land__tonelogo" ></div>
+    
+    
+    <div class="section_home_block section_home_block_slogan" style="display: none;">
+        <svg class="section_home_block_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" viewBox="0 0 1860 2520" enable-background="new 0 0 1860 2520" xml:space="preserve">
+            <text xmlns="http://www.w3.org/2000/svg" text-anchor="middle" dominant-baseline="central " transform="matrix(1 0 0 1 930 1620)" fill="#888888" font-family="'ProximaNova-Regular'" font-size="48px">the beauty of mathematics of all times</text>
+            <text xmlns="http://www.w3.org/2000/svg" text-anchor="middle" dominant-baseline="central " transform="matrix(1 0 0 1 930 1740)" fill="#888888" font-family="'ProximaNova-Regular'" font-size="48px">the power of decentralization from the future</text>
+        </svg>
+    </div>
+    
+    
+    
+    <div class="section_home_block section_home_block_slogan">
+        <svg class="section_home_block_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1860 2520" enable-background="new 0 0 1860 2520" xml:space="preserve">
+            <text xmlns="http://www.w3.org/2000/svg" text-anchor="middle" dominant-baseline="central " transform="matrix(1 0 0 1 930 1620)" fill="#888888" font-family="Arial" font-size="72px">The first <tspan dominant-baseline="central" style="font-weight: 700;">risk-free</tspan> blockchain project</text>
+        </svg>
+    </div>
+    <div class="section_home_block section_home_block_slogan">
+        <svg class="section_home_block_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1860 2520" enable-background="new 0 0 1860 2520" xml:space="preserve">
+            <text xmlns="http://www.w3.org/2000/svg" text-anchor="middle" dominant-baseline="central " transform="matrix(1 0 0 1 930 1740)" fill="#888888" font-family="Arial" font-size="48px">The easiest and fastest way to make money in crypto industry</text>
+        </svg>
+    </div>
+    
+    
+    
+    
+    <div class="section_home_downleft_block">
+        <i class="section_home_downleft_block_i">
+            <img class="section_home_downleft_block_img" src="logo/home/past_icon.svg">
+        </i>
+        <div class="section_home_downleft_content">
+            <div class="section_home_downleft_txt">
+                the beauty of mathematics<br>of all times            </div>
+        </div>
+    </div>
+    <div class="section_home_downright_block" >
+        <i class="section_home_downright_block_i">
+            <img class="section_home_downright_block_img" src="logo/home/future_icon.svg">
+        </i>
+        <div class="section_home_downright_content">
+            <div class="section_home_downright_txt">
+                the power of decentralization<br>from the future            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+        
+    
+    <style>
+        .section_home_actionbtn_before_i {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    margin-left: -16px;
+    margin-bottom: -16px;
+    width: 32px;
+    height: 32px;
+    fill: #dfdfdf;
+}
+    </style>
+    <i class="section_home_actionbtn_before_i">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 6.5 1 C 4.572833 1 3 2.572833 3 4.5 L 3 10.5 C 3 12.427167 4.572833 14 6.5 14 L 8.5 14 C 10.427167 14 12 12.427167 12 10.5 L 12 4.5 C 12 2.572833 10.427167 1 8.5 1 L 6.5 1 z M 6.5 2 L 8.5 2 C 9.886833 2 11 3.113167 11 4.5 L 11 10.5 C 11 11.886833 9.886833 13 8.5 13 L 6.5 13 C 5.113167 13 4 11.886833 4 10.5 L 4 4.5 C 4 3.113167 5.113167 2 6.5 2 z M 7.5 3 L 6 5 L 9 5 L 7.5 3 z M 6 6 L 7.5 8 L 9 6 L 6 6 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path></svg>
+    </i>
+    <div class="text-center section_home_actionbtn_block">
+        <a href="#section_itsnot" class="section_home_actionbtn_a" class="color: #f2f4ff; text-decoration: none;">
+            <span class="section_home_actionbtn_a_span1">TAKE UP TO <span class="c-yellow f-bold" style="color: #ffe620;">10000&nbsp;ETH</span> NOW</span>
+            <span class="section_home_actionbtn_a_span2">you <span class="c-yellow-no f-bold">haven't to return it back</span> later</span>
+        </a>
+    </div>
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="user-land__graph" style="display: none;"><span></span></div>
+    <h1 class="user-land__name user-land__name--plus" style="display: none;">
+        <i class="fab fa-ethereum" style="width: 42px; height: 42px; font-size: 42px; line-height: 42px; color: #888888; content: ' ';   position: absolute; top: -54px; left: 50%; margin-left: -21px;"></i>
+            
+        
+        The first <tspan dominant-baseline="central" style="font-weight: 700;">risk-free</tspan> blockchain project        <!-- если свободный реф, то вместо Your Upline вставляем The first <tspan dominant-baseline="central" style="font-weight: 700;">risk-free</tspan> blockchain project -->
+        
+        
+    </h1>
+        
+    <style>
+            .user-land__status {
+                font-size: 19px;
+            }
+            @media screen and (max-width: 640px) {
+                .user-land__status {
+                    font-size: 15px;
+                }
+            }
+    </style>
+    <span class="user-land__status user-land__status--plus" style="display: none;">
+        <i class="fab fa-ethereum" style="width: 48px;height: 48px;font-size: 48px;line-height: 48px;color: #888888;position: absolute;margin-right: : -24px;top: -24px;left: -96px; display: none;"></i>
+        <i class="fab fa-ethereum" style="width: 48px;height: 48px;font-size: 48px;line-height: 48px;color: #888888;position: absolute;margin-left: -24px;top: -24px;right: -96px; display: none;"></i>
+        
+        
+        <span id="yourUpline-no" style="position: relative; z-index: 1; font-size: 16px;font-weight: 300;"></span>
+        <!-- если свободный реф, то кошель НЕ пишем (только сам кошелек не пишем, при этом сам блок оставляем) -->
+        
+        
+    </span>
+    <div class="user-land__logo" style="display: none;">
+        <div class="white-logo">
+            <div class="equlizer-block equlizer-block--w ">
+                
+                <span class=" equlizer equlizer--1"></span>
+                <span class="equlizer equlizer--2"></span>
+                <span class="equlizer equlizer--3"></span>
+                <span class="equlizer equlizer--4"></span>
+                <span class="equlizer equlizer--5"></span>
+            </div>
+            
+            <div style="position: absolute;top: 7.8125%;left: 0;right: 0;margin: auto;width: 100%;height: 53.125%;z-index: 0;">
+                <div style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;width: 100%;max-width: 1024px;height: 100%;">
+                    <span style="position: absolute;top: 100%;left: 0;right: 0;width: 100%;height: 4px;background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);"></span>
+                </div>
+                <div style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;width: 100%;max-width: 512px;height: 100%;transform: rotate(120deg);">
+                    <span style="position: absolute;top: 100%;left: 0;right: 0;width: 100%;height: 4px;background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);"></span>
+                </div>
+                <div style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;width: 100%;max-width: 512px;height: 100%;transform: rotate(240deg);">
+                    <span style="position: absolute;top: 100%;left: 0;right: 0;width: 100%;height: 4px;background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);"></span>
+                </div>
+            </div>
+            <img src="logo/logo_circles_white.svg" style="position: absolute; top: -25%; left: 0; right: 0; margin: auto; width: auto; height: 118.75%; opacity: 0.28; z-index: 0;">    
+            <img src="logo/logo_large.svg" style="">
+        </div>
+            
+        <h3 class="white-logo__title white-logo__title--big" style="color: #5a5a5a; display: none;">SolidETH</h3>
+
+        <h3 class="white-logo__desc white-logo__desc--big" style="position: relative; color: #888888; padding-bottom: 48px; padding-top: 24px;">the oldest formula in the world<br>and blockchain technology</h3>
+            
+    </div>
+
+    <div class="text-center" style="display: none;">
+        <a class="btn-start-earn waved" href="#section_itsnot">
+            TAKE UP TO <span class="c-yellow f-bold" style="color: #ffe620;">10000&nbsp;ETH</span> NOW            <span class="btn-start-earn__subtext">you <span class="c-yellow-no f-bold">haven't to return it back</span> later</span>
+        </a>
+    </div>
+ 
+    
+</section>
+<section id="section_itsnot" class="user-land-team cryp-section translate40-no js-animate-no" style="padding-bottom: 0;">
+
+
+    <div class="tab-content">
+        <div class="tab-pane fade-no in active" id="team-els-no">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="user-land-team__el user-land-team__el--its-not-investing waved waved--2">
+                            <span class="user-land-team__cryp">It is not an investment</span>
+                            <span class="user-land-team__value">No need to wait</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="user-land-team__el user-land-team__el--its-not-trading  waved waved--2">
+                            <span class="user-land-team__cryp">It is not a trading</span>
+                            <span class="user-land-team__value">No risk</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="user-land-team__el user-land-team__el--its-not-mlm waved waved--2">
+                            <span class="user-land-team__cryp">This is not a sale</span>
+                            <span class="user-land-team__value">of "magical" goods</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="user-land-team__el user-land-team__el--its-not-ico waved waved--2">
+                            <span class="user-land-team__cryp">It is not an ICO</span>
+                            <span class="user-land-team__value">Scam is impossible</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row t-center">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-desc userland_itsasc_block" style="padding-bottom: 0;">
+                            <div class="userland_itsasc_content">
+                                This is the <b style="font-weight: 700;"><i class="fas fa-check-circle" style="color: #4CD964;"></i> verified</b> and <b style="font-weight: 700;"><i class="fas fa-code" style="color: #4CD964;"></i> open source</b> smart contract, where everyone can earn as much as he wants, whether it is a new iPhone or a new apartment. There is no need to return this money later.                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row t-center">
+                    <div class="col-md-4">
+                        <p class="section-desc userland_itsasc_descr" >
+                            <i class="userland_itsasc_descr_i">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path d="M5.5,12l7-11l7,11l-7,4L5.5,12z"/><path d="M5.5,13.5l7,4l7-4l-7,9.5L5.5,13.5z"/></svg>
+                            </i>
+                            Ethereum - the SECOND cryptocurrency in the world by popularity after Bitcoin and the FIRST by popularity with the ability of smart contract creation. Smart contract - it is an algorythm of cryptocurrency distribution, wich can not be edited or delated after upload to the Ethereum network.                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="section-desc userland_itsasc_descr" >
+                            <i class="userland_itsasc_descr_i">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path display="none" d="M21,4H3C1.9,4,1,4.9,1,6v12c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V6C23,4.9,22.1,4,21,4z M10,15H4v-2h6V15z M11,11H4V9h7V11z M19.8,14.3c0,2.3-1.9,2.6-2.2,2.7v1h-1v-1c-0.3,0-2.4-0.3-2.4-3.2h1.9c0,1.7,0.9,1.6,1,1.6c0.1,0,0.9,0,0.9-1.1 c0-2.2-3.5-1.2-3.5-4.6c0-2.3,1.9-2.6,2.2-2.7V6h1v1.1c0.3,0.1,2.1,0.5,2.1,3.1h-1.9c0-1.4-0.6-1.6-0.8-1.6c-0.1,0-0.8,0-0.8,1.2 C16.4,11.7,19.8,11.1,19.8,14.3z"/><path d="M21,4H3C1.9,4,1,4.9,1,6v12c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V6C23,4.9,22.1,4,21,4z M10,15H4v-2h6V15z M11,11H4V9h7V11z M13.5,12L17,6.5l3.5,5.5L17,14L13.5,12z M13.5,12.8l3.5,2l3.5-2L17,17.5L13.5,12.8z"/></svg>
+                            </i>
+                            The SolidETH smart contract is uploaded into the Ethereum cryptocurrency network and even theoretically cannot be changed or deleted by anyone, including its creators. Therefore nobody and nothing can stop the work of the System even in case of site closure or administartion disappear. SolidETH system does not belong to anyone and works independently of the site.                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="section-desc userland_itsasc_descr" >
+                            <i class="userland_itsasc_descr_i">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 12 3 A 4 4 0 0 0 8 7 A 4 4 0 0 0 12 11 A 4 4 0 0 0 16 7 A 4 4 0 0 0 12 3 z M 8.8105469 14.392578 C 5.9935469 15.016578 3 16.385 3 18.5 L 3 21 L 21 21 L 21 18.5 C 21 16.385 18.006453 15.016578 15.189453 14.392578 C 14.459453 15.363578 13.308 16 12 16 C 10.692 16 9.5405469 15.363578 8.8105469 14.392578 z"></path></svg>
+                            </i>
+                            Accounts of every user keeps by the smart contarct and not by the site, that's why it can't be blocked or deleted even by the site admin. In your account (without password) on the SolidETH site is displayed only the information about every account , taken from the Ethereum smart contract. Therefore, it is impossible to hack an account and change a member's wallet.                        </p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        
+    </div>
+
+
+    <ul class="dot-tabs t-center" style="display: none;">
+        <li class="dot-tab__item active"><a class="dot-tab__link" href="#team-els" data-toggle="tab"></a></li>
+        <li class="dot-tab__item"><a class="dot-tab__link" href="#team-video" data-toggle="tab"></a></li>
+    </ul>
+</section>
+    
+    
+<section id="section_hiw" class="user-land-history cryp-section">
+    <div class="container">
+        <h2 class="section-title t-center  js-animate translate40">How it works</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        <style>
+        .fullwidthvideoblock {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            
+            display: none;
+        }
+        .fullwidthvideoblock2 {
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+        @media (max-width: 1000px) {
+            .fullwidthvideoblock2 {
+                width: 80%;
+            }
+        }
+        @media (max-width: 40px) {
+            .fullwidthvideoblock2 {
+                width: 100%;
+            }
+        }
+            
+        .fullwidthvideocontainer {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+        .fullwidthvideocontent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        </style>
+        
+        
+                
+        
+        
+        
+            
+        
+        
+        
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10 t-center js-animate translate40">
+                <p class="section-desc">
+                    You will need the Ethereum Wallet and 0.05 ETH. 
+                    <br>
+                    
+                    (0.05 ETH = $ <span id="vs_eth_price"><i class="fas fa-ellipsis-h"></i></span>)
+                    
+                    
+                    <br>
+                    <span style="color: #333333; font-weight: 600;">Step 0:</span> If you do not have an Ethereum-wallet, more details here <a href="faqeth.html" target="_blank" class="c-blue" style="text-decoration: underline;">Ethereum FAQ</a>.                </p>
+            </div>
+        </div>
+        
+        
+        <style>
+            .history-item__desc {
+                font-size: 16px;
+            }
+        </style>
+        <div class="user-land-history__items">
+            <div class="row">
+                
+                
+                <div class="col-md-6 js-animate translate40">
+                    <div class="history-item history-item--congress history-item--congress-spain history-item--left">
+                        <div class="history-item__wrapper">
+                            <img src="assets/img/new/user_land/steps/1.svg" height="128" style="position: absolute; top: -32px; left: -32px; display: block; width: auto; height: 128px;">
+                            <h3 class="history-item__title">Step 1</h3>
+                            <p class="history-item__desc">
+                                To register and simultaneously receive the 1st level in the System, send 0.05 ETH to your upline. And the first user, that will come after you, will send this amount back to you. This is 1 time action at all. All other transfers are made at the expense of already earned funds. 
+                                <br>
+                                Simple and clear guide on the page <a href="signup.html" style="text-decoration: underline;">SIGN UP</a>. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 js-animate translate40">
+                    <div class="history-item history-item--blockchain history-item--right">
+                        <div class="history-item__wrapper">
+                            <img src="assets/img/new/user_land/steps/2-right.svg" height="128" style="position: absolute; top: -32px; right: -32px; display: block; width: 128px; height: auto;">
+                            <h3 class="history-item__title">Step 2</h3>
+                            <p class="history-item__desc">
+                                <a href="login.html" style="text-decoration: underline;">SIGN IN</a> TO THE ACCOUNT, using only the Ethereum wallet number (without password).                                <br>
+                                The password is not needed, since your account is in a smart contract, and not on the site. Therefore, your account cannot be blocked or deleted from the System even by the site administration. And your Ethereum wallet can not be hacked or changed to another.                                <br>
+                                <span class="c-red">We never ask your private keys.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 js-animate translate40">
+                    <div class="history-item history-item--leadership history-item--munich history-item--left">
+                        <div class="history-item__wrapper">
+                            <img src="assets/img/new/user_land/steps/3.svg" height="148" style="position: absolute; top: -32px; left: -32px; display: block; width: auto; height: 148px;">
+                            <h3 class="history-item__title">Step 3</h3>
+                            <p class="history-item__desc">
+                                There are three ways to get referrals:                                <br>
+                                1) Attract referrals to your structure in SolidETH.                                <br>
+                                2) Get referrals from your uplines by "overflows" (as programmed in the smart contract).                                <br>
+                                3) Wait until the system will bring you free referrals by itself.                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 js-animate translate40">
+                    <div class="history-item history-item--blockchain history-item--right">
+                        <div class="history-item__wrapper" >
+                            <img src="assets/img/new/user_land/steps/4.svg" width="140" style="position: absolute; top: -32px; right: -32px; display: block; width: 140px; height: auto;">
+                            <div class="history-item__date" style="color: #4cd964;">the Finish</div>
+                            <h3 class="history-item__title">Step 4</h3>
+                            <p class="history-item__desc">
+                                Receive automatic transactions from smart contract directly on your Ethereum wallet. 
+                                <br>
+                                According to the tabel below, on the 1st level you are transferred 0.15&nbsp;ETH, on the 2nd level - 1.35&nbsp;ETH, and on the 3rd level - 12.15&nbsp;ETH. (there are 8 levels in total and 10000ETH of earnings). 
+                                <br>
+                                <span class="c-white-no">No need to accept transactions or request payments. The funds directly come to your wallet.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 js-animate translate40">
+                    <div class="history-item history-item--leadership history-item--berlin history-item--left">
+                        <div class="history-item__wrapper">
+                            <img src="assets/img/new/user_land/steps/5.svg" width="128" style="position: absolute; top: -32px; left: -32px; display: block; width: 128px; height: auto;">
+                            <div class="history-item__date" style="color: #ff9500;">Step 5 is needed<br> to make one-time income permanent.</div>
+                            <h3 class="history-item__title" >Step 5</h3>
+                            <div class="history-item__place history-item__place-repeat"><i class="fas fa-sync-alt"></i> Repeat it every year</div>
+                            
+                        
+                            <p class="history-item__desc">
+                                If you have more than 5000 ETH and 120 anonymous referrals. What to do next? It may be repeated every year, retaining a structure. And get the same amount of income every year, collected by all the time in the system. <span class="c-white-no">And the FEWER people left in your structure, the MORE your income is.</span> Your inactive and dropped out referrals -  a "door", to all their referrals of the same line, in case of their inactivity. 
+                            </p>
+                            <style>
+                                @media (max-width: 1000px) {
+                                    .main_hiv_logo_repeat_block {
+                                        display: none;
+                                    }
+                                }
+                            </style>
+                            <div class="main_hiv_logo_repeat_block" style="margin-top: 26px; text-align: left;">
+                                <img src="logo/logo_repeat_ey.svg" alt="" width="auto" height="88" style="display: block; width: auto; height: 88px; margin: auto; margin-right: 0;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 js-animate translate40" >
+                    <div class="history-item history-item--leadership history-item--koln history-item--right">
+                        <div class="history-item__wrapper" style="border: 3px solid #f2f2f2; background: #ffffff;">
+                            <img src="assets/img/new/user_land/steps/6.svg" height="152" style="position: absolute; top: -32px; right: -32px; display: block; width: auto; height: 152px;">
+                            <img src="assets/img/new/user_land/steps/6.svg" height="128" style="position: absolute; top: 0; right: 0; display: block; width: 128px; height: 128px; display: none;">
+                            
+                            <h3 class="history-item__title">What is next?</h3>
+                            <div class="history-item__place history-item__place-guarantee"><i class="fas fa-stamp"></i> Guarantees</div>
+                            <p class="history-item__desc">
+                                Nobody can close your account, to stop payments or make changes to the system,   since the smart contract is loaded into the Ethereum network. It can't be deleted or changed.                                <br>
+                                Referrals can be invited without a website and referral links but directly into a smart contract.                                <br>
+                                <span class="c-green">Therefore, the SolidETH System will exist as long as the cryptocurrency exist, and the cryptocurrency will exist as long as the Internet exist.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    <div class="t-center" style="padding-top: 21px;">
+        <div class="history-item__date" style="margin-top: 0px;">More detailes about every step <a href="howitworks.html" target="_blank" style="text-decoration: underline;">How it works</a></div>
+    </div>
+    
+    
+    
+    
+    
+</section>
+    
+    
+    
+
+
+<section id="section_levels" class="user-land-investments cryp-section section-dark-bg">
+    <div class="container t-center  js-animate translate40">
+        <ul class="invest-tabs">
+            
+            <li class="invest-tab__item  invest-tab__item--career active">
+                <a href="#investment-career" data-toggle="tab" class="invest-tab__link" style="border-radius: 4px 4px 4px 4px; text-align: center;">
+                    <span class="invest-tab__name">Profit table</span>
+                    <span class="invest-tab__desc">8 levels in total and 120 referrals</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content">
+ 
+        <div id="investment-career" class="tab-pane fade in active">
+
+
+            <div class="container">
+                
+                
+                
+                <div class="career-item career-item-bg" style="padding-top: 38px;">
+                    <div class="clearfix t-center" style="margin-bottom: 19px;">
+                        <div class="col-md-3">
+                            <p class="career-item__text">Level</p>
+                            <p class="career-item__text"><span class="career-item__percent">#1</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Price</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_blue">0.05</span> ETH</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Referrals</p>
+                            <p class="career-item__text"><span class="career-item__percent">3</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Income</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_green">0.15</span> ETH</span></p>
+                        </div>
+                    </div>
+                    <div class="clearfix t-center" style="margin-bottom: 19px;">
+                        <div class="col-md-3">
+                            <p class="career-item__text">Level</p>
+                            <p class="career-item__text"><span class="career-item__percent">#2</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Price</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_blue">0.15</span> ETH</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Referrals</p>
+                            <p class="career-item__text"><span class="career-item__percent">9</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Income</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_green">1.35</span> ETH</span></p>
+                        </div>
+                    </div>
+                    <div class="clearfix t-center" style="margin-bottom: 19px;">
+                        <div class="col-md-3">
+                            <p class="career-item__text">Level</p>
+                            <p class="career-item__text"><span class="career-item__percent">#3</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Price</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_blue">0.45</span> ETH</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Referrals</p>
+                            <p class="career-item__text"><span class="career-item__percent">27</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Income</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_green">12.15</span> ETH</span></p>
+                        </div>
+                    </div>
+
+                    <div class="clearfix t-center" style="margin-bottom: 19px;">
+                        <div class="col-md-3">
+                            <p class="career-item__text">Level</p>
+                            <p class="career-item__text"><span class="career-item__percent">#4</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Price</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_blue">1.35</span> ETH</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Referrals</p>
+                            <p class="career-item__text"><span class="career-item__percent">81</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Income</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_green">109.35</span> ETH</span></p>
+                        </div>
+                    </div>
+              
+                    <div class="clearfix t-center" style="margin-bottom: 19px;">
+                        <div class="col-md-3">
+                            <p class="career-item__text">Level</p>
+                            <p class="career-item__text"><span class="career-item__percent">#5</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Price</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_blue">4.05</span> ETH</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Referrals</p>
+                            <p class="career-item__text"><span class="career-item__percent">3</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Income</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_green">12.15</span> ETH</span></p>
+                        </div>
+                    </div>
+                
+                    <div class="clearfix t-center" style="margin-bottom: 19px;">
+                        <div class="col-md-3">
+                            <p class="career-item__text">Level</p>
+                            <p class="career-item__text"><span class="career-item__percent">#6</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Price</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_blue">12.15</span> ETH</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Referrals</p>
+                            <p class="career-item__text"><span class="career-item__percent">9</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Income</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_green">109.35</span> ETH</span></p>
+                        </div>
+                    </div>
+                
+                    <div class="clearfix t-center" style="margin-bottom: 19px;">
+                        <div class="col-md-3">
+                            <p class="career-item__text">Level</p>
+                            <p class="career-item__text"><span class="career-item__percent">#7</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Price</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_blue">36.45</span> ETH</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Referrals</p>
+                            <p class="career-item__text"><span class="career-item__percent">27</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Income</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_green">984.15</span> ETH</span></p>
+                        </div>
+                    </div>
+
+                    <div class="clearfix t-center" >
+                        <div class="col-md-3">
+                            <p class="career-item__text">Level</p>
+                            <p class="career-item__text"><span class="career-item__percent">#8</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Price</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_blue">109.35</span> ETH</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Referrals</p>
+                            <p class="career-item__text"><span class="career-item__percent">81</span></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="career-item__text">Income</p>
+                            <p class="career-item__text"><span class="career-item__percent career-item__ethereum"><i class="fab fa-ethereum"></i> <span class="c-dark_green">8857.35</span> ETH</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="career-item" style="padding-top: 38px;">
+                    <div class="clearfix t-center">
+                        <div class="col-md-12" style="position: relative;">
+                            <p class="career-item__text">
+                                <span class="career-item__percent">Your profit in total: <i class="fab fa-ethereum"></i>&nbsp;<b class="c-dark_green">10,000</b>&nbsp;ETH including all costs.<span style="color: #ff3b30;">&#42;</span>&nbsp;<span style="color: #ffe620;">&#42;&#42;</span>&nbsp;<span style="color: #04de71">&#42;&#42;&#42;</span></span>
+                            </p>
+                            <p class="career-item__text">
+                                <span class="career-item__percent" style="font-size: 12px; color: #888888;">Strictly income: 10,086.00 ETH, net profit: 9,922.00 ETH.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix t-center">
+                        <div class="col-md-4" style="position: relative;">
+                            <p class="career-item__text" style="margin-top: 19px;">
+                                <span class="career-item__percent" style="font-size: 12px; color: #888888;">
+                                    <span style="color: #ff3b30;">&#42;</span> Amount of 10000 ETH (strictly income 10,086.00 ETH) is the maximum possible theoretical profit, which is almost impossible to make with a one-time passage of all levels, and the probability of its receipt tends to 0%.                                </span>
+                            </p>
+                        </div>
+                        <div class="col-md-4" style="position: relative;">
+                            <p class="career-item__text" style="margin-top: 19px;">
+                                <span class="career-item__percent" style="font-size: 12px; color: #888888;">
+                                    <span style="color: #ffe620;">&#42;&#42;</span> In practice, in real conditions it is quite realistic to make HALF of this amount, and the probability of receiving it tends to 100% even with a full passage through the all levels.                                </span>
+                            </p>
+                        </div>
+                        <div class="col-md-4" style="position: relative;">
+                            <p class="career-item__text" style="margin-top: 19px;">
+                                <span class="career-item__percent" style="font-size: 12px; color: #888888;">
+                                    <span style="color: #04de71">&#42;&#42;&#42;</span> But With the function "REPEAT" the possibility to make <span style="color: #04de71">10,000</span> ETH (and more, thanks to inactive referrals) tends to 100% for EVERY participator of SolidETH                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+    
+ 
+
+<section class="user-land-advantages  cryp-section translate40 js-animate" style="padding-bottom: 0;">
+
+    <span class="user-land-advantages__left"></span>
+    <span class="user-land-advantages__right"></span>
+    <div class="container">
+        <h2 class="section-title t-center js-animate translate40">Advantages</h2>
+        
+        <div class="row">
+            <div class="col-md-5">
+                <div class="user-land-advantage__item js-animate translate40">
+                    <div class="user-land-advantage__value">Absence of risks</div>
+                    <div class="user-land-advantage__desc">Your costs in the project won't pass more than 0.05 ETH, wich will be returned with the first referral. No "payment requests" and no need to wait. Your funds are immediately transferred to your wallet.</div>
+                </div>
+                <div class="user-land-advantage__item js-animate translate40">
+                    <div class="user-land-advantage__value">If no one ever invited</div>
+                    <div class="user-land-advantage__desc">The system finds referrals for you by itself. Participants who came not via referral link become consolidated referrals and are distributed evenly between users starting from those who previously bought level 1.</div>
+                </div>
+                <div class="user-land-advantage__item js-animate translate40">
+                    <div class="user-land-advantage__value">Referrals from your uplines</div>
+                    <div class="user-land-advantage__desc">When all the 3 slots of your upline's 1st, 2nd, 3d, or 4th line will be filled, the next referrals, invited by his ads, will be yours or will become referrals of Your own referrals from which you also make a profit.</div>
+                </div>
+                <div class="user-land-advantage__item js-animate translate40">
+                    <div class="user-land-advantage__value">INactive referrals</div>
+                    <div class="user-land-advantage__desc">INactive referral multiplies your profit. INactive or dropped out referral - is a "passage" to the ALL referral of the same line. If your inactive referral is on the 4th line, You will receive 80 transfers + ADDITIONALY 81 more transcations from the all his 4th line referrals.</div>
+                </div>
+            </div>
+            <div class="col-md-2 text-center js-animate translate40">
+                <img src="assets/img/new/user_land/polygonal_logo.svg" srcset="./assets/img/new/user_land/polygonal_logo.svg 2x" width="218" class="polygon-logo" style="margin-top: 55px; margin-top: 155px;">
+            </div>
+            <div class="col-md-5 ">
+                <div class="user-land-advantage__item user-land-advantage__item--right js-animate translate40">
+                    <div class="user-land-advantage__desc">This is the world first System that no one controls. The human factor (including the admin factor) is completely absent. Nobody can stop, make changes to the System or to hold your funds. The open source smart contract cannot be removed from the Ethereum network.</div>
+                    <div class="user-land-advantage__value">Full decentralization</div>
+                </div>
+                <div class="user-land-advantage__item user-land-advantage__item--right js-animate translate40">
+                    <div class="user-land-advantage__desc">The administration of the project does not have access to your money, all calculations are made through a smart contract (it cannot be changed), which immediately redirects funds to the ETH wallet.</div>
+                    <div class="user-land-advantage__value">All transactions between participants</div>
+                </div>
+                <div class="user-land-advantage__item user-land-advantage__item--right js-animate translate40">
+                    <div class="user-land-advantage__desc">Even if the project site will cease to exist, the eternal work of the system is guaranteed by smart contract and Ethereum blokchain</div>
+                    <div class="user-land-advantage__value">Unable to stop the system</div>
+                </div>
+                <div class="user-land-advantage__item user-land-advantage__item--right js-animate translate40">
+                    <div class="user-land-advantage__desc">Profit, received for all time in the project, can be repeated every year. The FEWER persons in Your structure use this function, the HIGHER Tour profit will be. All INactive referrals are also a "door" to all the referrals of the same line.</div>
+                    <div class="user-land-advantage__value">Function "REPEAT"</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row t-center">
+            <div class="col-md-offset-2 col-md-8 js-animate translate40">
+                <p class="section-desc" style="padding-bottom: 0;">These are just some of the benefits. Any questions? <a href="faq.html" target="_blank" class="c-blue">FAQ</a> and <a href="faqeth.html" target="_blank" class="c-blue">Ethereum FAQ</a></p>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+     
+  
+  
+
+<section class="user-land-investments cryp-section" style="position: relative; background: #ffffff !important;">
+    <div class="container t-center  js-animate translate40">
+        <ul class="invest-tabs">
+            <li class="invest-tab__item invest-tab__item--invest active">
+                <span  data-toggle="tab" class="invest-tab__link">
+                    <span class="invest-tab__name">Live statistics</span>
+                    <span class="invest-tab__desc">In real time</span>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div id="investment-types" class="tab-pane fade in active">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4  js-animate translate40">
+                        <div class="investment-type t-center">
+                            <div class="investment-type__header investment-type__header--sdandart  waved">
+                                <h3 class="investment-type__name" style="display: none;">Users</h3>
+                                <img src="assets/img/new/user_land/investment_cryp.png" srcset="./assets/img/new/user_land/investment_cryp@2x.png 2x" width="105" style="display: none; opacity: 0; visibility: hidden;">
+                                
+                            </div>
+                            
+                            <div class="investment-type__body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="investment-type__percent" id="vs_block_total_user"><i class="fas fa-ellipsis-h"></i></div>
+                                        <span class="investment-type__small-text">total participants</span>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div class="investment-type__row" style="overflow: hidden;">
+                                        <span style="float: left;">1&nbsp;lv <b id="vs_block_l1_tx"><i class="fas fa-ellipsis-h"></i></b></span>
+                                        <span style="float: right;">2&nbsp;lv <b id="vs_block_l2_tx"><i class="fas fa-ellipsis-h"></i></b></span>
+                                    </div>
+                                    <div class="investment-type__row" style="overflow: hidden;">
+                                        <span style="float: left;">3&nbsp;lv <b id="vs_block_l3_tx"><i class="fas fa-ellipsis-h"></i></b></span>
+                                        <span style="float: right;">4&nbsp;lv <b id="vs_block_l4_tx"><i class="fas fa-ellipsis-h"></i></b></span>
+                                    </div>
+                                    <div class="investment-type__row" style="overflow: hidden;">
+                                        <span style="float: left;">5&nbsp;lv <b id="vs_block_l5_tx"><i class="fas fa-ellipsis-h"></i></b></span>
+                                        <span style="float: right;">6&nbsp;lv <b id="vs_block_l6_tx"><i class="fas fa-ellipsis-h"></i></b></span>
+                                    </div>
+                                    <div class="investment-type__row" style="overflow: hidden;">
+                                        <span style="float: left;">7&nbsp;lv <b id="vs_block_l7_tx"><i class="fas fa-ellipsis-h"></i></b></span>
+                                        <span style="float: right;">8&nbsp;lv <b id="vs_block_l8_tx"><i class="fas fa-ellipsis-h"></i></b></span>
+                                    </div>
+                                </div>
+                                
+                                <!-- если НЕ залогинен, то показываем эти кнопки: -->
+                                                                     <a href="login.html" class="btn btn--md btn--black" style="color: #2094fa !important; background-color: #dfdfdf !important; background-color: rgba(0, 0, 0, 0.07) !important;"><i class="fas fa-sign-in-alt"></i> Login</a>
+                                                                
+                                <p class="investment-type__small-text--xs">login without password</p>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 js-animate translate40">
+                        <div class="investment-type t-center">
+                            <div class="investment-type__header investment-type__header--mega waved" style="display: flex; vertical-align: middle;">
+                                
+                                
+                                <style>
+                                    .homecountmap_block {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 5px 5px 0 0;
+                                        overflow: hidden;
+                                        background-no: url(assets/img/new/user_land/dashmap.png) center center no-repeat;
+                                        background-size: contain;
+                                    }
+                                    .homecountmap_blockmargin {
+                                        position: relative; 
+                                        margin-left: -128px; 
+                                        display: block; 
+                                        width: 256px; 
+                                        height: 128px;
+                                    }
+                                    .homecountmap_blockmargin span img {
+                                        
+                                    }
+                                    .homecountmap_blockmargin>span>img:first-child {
+                                        opacity: 0;
+                                        visibility: hidden;
+                                    }
+                                    .homecountmap_overlay {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                </style>
+                                
+                                
+                                <div class="homecountmap_block">
+                                    <script type="text/javascript" src="../rf.revolvermaps.com/0/0/72ed7.js?i=528vw7er73i&amp;m=0c&amp;c=888888&amp;cr1=ff9500&amp;crb1=333333&amp;sx=0&amp;cdb=888888&amp;dds=0&amp;cw=ffffff&amp;cb=f2f4ff" async="async"></script>
+                                    
+                                    <a href="https://www.revolvermaps.com/?target=enlarge&amp;i=528vw7er73i" target="_blank" class="homecountmap_overlay"></a>
+                                </div>
+                                <h3 class="investment-type__name" style="display: none;">Project</h3>
+                                <img src="assets/img/new/user_land/investment_cryp.png" srcset="./assets/img/new/user_land/investment_cryp@2x.png 2x"  width="105" style="opacity: 0; visibility: hidden; display: none;">
+                                <div class="investment-type__periods clearfix" style="display: none;">
+                                    <span class="investment-type__period-from" style="display: none;">от <span class="investment-type__period-sum">$5000</span></span>
+                                    <span class="investment-type__period-to" style="display: none;">лет проекту <span class="investment-type__period-sum"><i class="fas fa-ellipsis-h"></i></span></span>
+                                </div>
+                            </div>
+                            <div class="investment-type__body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        
+                                        <style>
+                                            .investment-type__percent {
+                                                position: relative;
+                                            }
+                                            .mainstatonline_block {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                right: 0;
+                                                bottom: 0;
+                                                display: flex;
+                                                width: 100%;
+                                                height: 100%;
+                                                color: #666666;
+                                                text-align: center;
+                                                vertical-align: middle;
+                                            }
+                                            .mainstatonline_content {
+                                                
+                                            }
+                                            .waubutton {
+                                                margin: auto !important;
+                                                display: inline-block !important;
+                                                width: auto !important;
+                                                height: auto !important;
+                                                background: none !important;
+                                                line-height: inherit !important;
+                                            }
+                                            .waubutton span {
+                                                position: absolute !important;
+                                                top: 0 !important;
+                                                left: 100% !important;
+                                                right: auto !important;
+                                                bottom: 0 !important;
+                                                margin-left: 12px;
+                                                width: auto !important;
+                                                height: 100% !important;
+
+                                            }
+                                            .waubutton span:before {
+                                                position: absolute;
+                                                content: "";
+                                                top: 0;
+                                                right: 0;
+                                                bottom: 0;
+                                                display: block;
+                                                width: 44px;
+                                                height: 100%;
+                                                background: url(assets/img/new/user_land/stats_amung.png) right center no-repeat;
+                                                background-size: contain;
+                                                display: none;
+                                            }
+                                            .waubutton span:after {
+                                                position: absolute;
+                                                content: "";
+                                                top: 0;
+                                                left: 0;
+                                                bottom: 0;
+                                                display: block;
+                                                width: 24px;
+                                                height: 100%;
+                                                background: url(assets/img/new/user_land/stats_link.svg) right center no-repeat;
+                                                background-size: contain;
+                                            }
+                                            
+                                            .waubutton img {
+                                                position: absolute !important;
+                                                top: 0 !important;
+                                                left: auto !important;
+                                                right: 0 !important;
+                                                bottom: 0 !important;
+                                                margin-top: 0 !important;
+                                                display: block;
+                                                width: auto !important;
+                                                height: 100% !important;
+
+                                                display: none;
+                                            }
+                                            
+                                           
+                                            .waubutton p {
+                                                margin: auto !important;
+                                                color: #666666 !important;
+                                                text-shadow: none !important;
+                                                font-size: 32px !important;
+                                                font-weight: 500 !important;
+                                                font-family: inherit !important;
+                                            }
+                                            .mainstatonline_overlay {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                right: 0;
+                                                bottom: 0;
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        </style>
+                                        <div class="investment-type__percent" style="color: transparent">0<div class="mainstatonline_block"><script id="_wauk0v">var _wau = _wau || []; _wau.push(["dynamic", "irm0ea5tbe", "k0v", "04de71f2f4ff", "big"]);</script><script async src="../waust.at/d.js"></script><a href="https://whos.amung.us/stats/irm0ea5tbe/" target="_blank" class="mainstatonline_overlay"></a></div></div>                                        
+                                        <span class="investment-type__small-text">guests online</span>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div class="investment-type__row">
+                                        project years <b id="vs_project_days_block"><i class="fas fa-ellipsis-h"></i></b>
+                                    </div>
+                                    <div class="investment-type__row">
+                                        transactions <b id="vs_block_total_tx"><i class="fas fa-ellipsis-h"></i></b>
+                                    </div>
+                                    <div class="investment-type__row">
+                                        transcations for 24 hours <b id="vs_block_inLas24h_tx"><i class="fas fa-ellipsis-h"></i></b>
+                                    </div>
+                                    <div class="investment-type__row" style="opacity: 0; visibility: hidden;">
+                                        project balance <b>0</b>
+                                    </div>
+                                    
+                                </div>
+                                
+                                     
+                                
+                                <!-- если НЕ залогинен, то показываем эти кнопки: -->
+                                                                    <a href="signup.html" class="btn btn--md btn--black" style="background-color: #2094fa !important;color: #f2f4ff !important;"><i class="fas fa-user-plus"></i> Sign up</a>
+                                                                
+                                <p class="investment-type__small-text--xs" style="opacity: 0; visibility: hidden;">now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 js-animate translate40">
+                        <div class="investment-type t-center">
+                            <div class="investment-type__header investment-type__header--vip waved">
+                                <h3 class="investment-type__name" style="display: none;">Profits</h3>
+                                <img src="assets/img/new/user_land/investment_cryp.png" srcset="./assets/img/new/user_land/investment_cryp@2x.png 2x" width="105" style="opacity: 0; visibility: hidden; display: none;">
+                                
+                            </div>
+                            <div class="investment-type__body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="investment-type__percent"><span id="vs_ETH_amuont_block"><i class="fas fa-ellipsis-h"></i></span>&nbsp;ETH</div>
+                                        <span class="investment-type__small-text">total transactions</span>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div class="investment-type__row">
+                                        equivalent to BTC <b><span id="vs_BTC_amuont_block"><i class="fas fa-ellipsis-h"></i></span>&nbsp;BTC</b>
+                                    </div>
+                                    <div class="investment-type__row">
+                                        equivalent to  <b>$<span id="vs_USDT_amuont_block"><i class="fas fa-ellipsis-h"></i></span></b>
+                                    </div>
+                                    <div class="investment-type__row">
+                                        for 24 hours <b><span id="vs_ETH_amuont_in24H_block"><i class="fas fa-ellipsis-h"></i></span>&nbsp;ETH</b>
+                                    </div>
+                                    <div class="investment-type__row">
+                                        1&nbsp;ETH = <b><span id="vs_Price_In_BTC_block"><i class="fas fa-ellipsis-h"></i></span>&nbsp;BTC</b> = <b>$<span id="vs_Price_In_USD_block"><i class="fas fa-ellipsis-h"></i></span></b>
+                                    </div>
+                                </div>
+                                <a href="https://rinkeby.etherscan.io/address/0xcb2c11ca6c2b2617b4f7efc7bd4347375ecb54ce" target="_blank" class="btn btn--md btn--black" style="color: #2094fa !important; background-color: #dfdfdf !important; background-color: rgba(0, 0, 0, 0.07) !important;"><i class="fab fa-ethereum"></i> Address</a>
+                                <p class="investment-type__small-text--xs"><a href="https://rinkeby.etherscan.io/address/0xcb2c11ca6c2b2617b4f7efc7bd4347375ecb54ce#contracts" target="_blank" style="color: #2094fa;"><i class="fas fa-code"></i> Open source</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <div class="user-land-step__svg" style="display: none;">
+        <span class="user-land-step__svg--1"></span>
+        <span class="user-land-step__svg--2"></span>
+        <span class="user-land-step__svg--3"></span>
+        <span class="user-land-step__svg--4"></span>
+        <span class="user-land-step__svg--5"></span>
+        <span class="user-land-step__svg--6"></span>
+        <span class="user-land-step__svg--7"></span>
+        <span class="user-land-step__svg--8"></span>
+        <span class="user-land-step__svg--9"></span>
+        <span class="user-land-step__svg--10"></span>
+        <span class="user-land-step__svg--11"></span>
+        <span class="user-land-step__svg--12"></span>
+        <span class="user-land-step__svg--1"></span>
+        <span class="user-land-step__svg--2"></span>
+        <span class="user-land-step__svg--3"></span>
+        <span class="user-land-step__svg--4"></span>
+        <span class="user-land-step__svg--5"></span>
+        <span class="user-land-step__svg--6"></span>
+        <span class="user-land-step__svg--7"></span>
+        <span class="user-land-step__svg--8"></span>
+        <span class="user-land-step__svg--9"></span>
+        <span class="user-land-step__svg--10"></span>
+        <span class="user-land-step__svg--11"></span>
+        <span class="user-land-step__svg--12"></span>
+        <span class="user-land-step__svg--1"></span>
+        <span class="user-land-step__svg--2"></span>
+        <span class="user-land-step__svg--3"></span>
+        <span class="user-land-step__svg--4"></span>
+        <span class="user-land-step__svg--5"></span>
+        <span class="user-land-step__svg--6"></span>
+        <span class="user-land-step__svg--7"></span>
+        <span class="user-land-step__svg--8"></span>
+        <span class="user-land-step__svg--9"></span>
+        <span class="user-land-step__svg--10"></span>
+        <span class="user-land-step__svg--11"></span>
+        <span class="user-land-step__svg--12"></span>
+        <span class="user-land-step__svg--1"></span>
+        <span class="user-land-step__svg--2"></span>
+        <span class="user-land-step__svg--3"></span>
+        <span class="user-land-step__svg--4"></span>
+        <span class="user-land-step__svg--5"></span>
+        <span class="user-land-step__svg--6"></span>
+        <span class="user-land-step__svg--7"></span>
+        <span class="user-land-step__svg--8"></span>
+        <span class="user-land-step__svg--9"></span>
+        <span class="user-land-step__svg--10"></span>
+        <span class="user-land-step__svg--11"></span>
+        <span class="user-land-step__svg--12"></span>
+        <span class="user-land-step__svg--1"></span>
+        <span class="user-land-step__svg--2"></span>
+        <span class="user-land-step__svg--3"></span>
+        <span class="user-land-step__svg--4"></span>
+        <span class="user-land-step__svg--5"></span>
+        <span class="user-land-step__svg--6"></span>
+        <span class="user-land-step__svg--7"></span>
+        <span class="user-land-step__svg--8"></span>
+        <span class="user-land-step__svg--9"></span>
+        <span class="user-land-step__svg--10"></span>
+        <span class="user-land-step__svg--11"></span>
+        <span class="user-land-step__svg--12"></span>
+        <span class="user-land-step__svg--1"></span>
+        <span class="user-land-step__svg--2"></span>
+        <span class="user-land-step__svg--3"></span>
+        <span class="user-land-step__svg--4"></span>
+        <span class="user-land-step__svg--5"></span>
+        <span class="user-land-step__svg--6"></span>
+        <span class="user-land-step__svg--7"></span>
+        <span class="user-land-step__svg--8"></span>
+        <span class="user-land-step__svg--9"></span>
+        <span class="user-land-step__svg--10"></span>
+        <span class="user-land-step__svg--11"></span>
+        <span class="user-land-step__svg--12"></span>
+        <span class="user-land-step__svg--1"></span>
+        <span class="user-land-step__svg--2"></span>
+        <span class="user-land-step__svg--3"></span>
+        <span class="user-land-step__svg--4"></span>
+        <span class="user-land-step__svg--5"></span>
+        <span class="user-land-step__svg--6"></span>
+        <span class="user-land-step__svg--7"></span>
+        <span class="user-land-step__svg--8"></span>
+        <span class="user-land-step__svg--9"></span>
+        <span class="user-land-step__svg--10"></span>
+        <span class="user-land-step__svg--11"></span>
+        <span class="user-land-step__svg--12"></span>
+        <span class="user-land-step__svg--1"></span>
+        <span class="user-land-step__svg--2"></span>
+        <span class="user-land-step__svg--3"></span>
+        <span class="user-land-step__svg--4"></span>
+        <span class="user-land-step__svg--5"></span>
+        <span class="user-land-step__svg--6"></span>
+        <span class="user-land-step__svg--7"></span>
+        <span class="user-land-step__svg--8"></span>
+        <span class="user-land-step__svg--9"></span>
+        <span class="user-land-step__svg--10"></span>
+        <span class="user-land-step__svg--11"></span>
+        <span class="user-land-step__svg--12"></span>
+        <span class="user-land-step__svg--1"></span>
+        <span class="user-land-step__svg--2"></span>
+        <span class="user-land-step__svg--3"></span>
+        <span class="user-land-step__svg--4"></span>
+        <span class="user-land-step__svg--5"></span>
+        <span class="user-land-step__svg--6"></span>
+        <span class="user-land-step__svg--7"></span>
+        <span class="user-land-step__svg--8"></span>
+        <span class="user-land-step__svg--9"></span>
+        <span class="user-land-step__svg--10"></span>
+        <span class="user-land-step__svg--11"></span>
+        <span class="user-land-step__svg--12"></span>
+    </div>
+
+</section>
+    
+
+<section class="section_lasttxns   cryp-section translate40 js-animate"> 
+    <div class="container">
+        <h3 class="history-item__title" style="color: #666666;text-align: center;margin: 0 0 32px;">New 10 transactions</h3>
+        <h2 class="section-title t-center js-animate translate40" style="display: none;">New 10 transactions</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <span id="vs_lasttxns"></span>
+            </div>
+        </div>
+    </div>
+    <div class="t-center" style="padding-top: 32px;">
+        <div class="history-item__date" style="margin-top: 0px;">All statistics are available at <a href="https://rinkeby.etherscan.io/address/0xcb2c11ca6c2b2617b4f7efc7bd4347375ecb54ce" target="_blank" style="text-decoration: underline;">etherscan</a></div>
+    </div>
+</section>
+  
+ 
+    
+  
+    
+<section class="user-land-contact cryp-section" style="padding-bottom: 32px;">
+    <div class="user-land-contact__backlogo"></div>
+    <div class="container">
+        <h2 class="section-title c-white-no t-center" style="display: none;"></h2>
+        
+
+        
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6 user-land-contact__left-no   js-animate translate40">
+                <div class="user-land-contact__logo white-logo" >
+                    <img src="logo/logo_start.svg" class="white-logo__img-no main_footer-logo__img" width="496" height="auto">
+                    <h3 class="white-logo__desc" style="margin-top: 16px;">The easiest and fastest way to make money in crypto industry</h3>
+                    <h3 class="white-logo__title" style="">You haven't to return this money</h3>
+                </div>
+                <div class="t-center">
+                    <a href="login.html" class="btn btn--user-contact btn--md">TAKE UP TO 10000&nbsp;ETH <span class="c-dark_yellow">NOW!</span></a>
+                </div>
+                <div class="t-center user-land-contact__partners">
+                    <img src="assets/img/new/ethereum_accepted_here.svg" class="img-responsive" style="height: 48px;">
+                </div>
+                <div class="nav-top__soc t-center">
+                    
+                    <style>
+                        .mainfootersocbutton_a {
+                            position: relative;
+                            margin-left: 16px;
+                            display: inline-block;
+                            width: 48px;
+                            height: 48px;
+                            border-radius: 24px;
+                            background: #dfdfdf;
+                            padding: 12px;
+                        }
+                        .mainfootersocbutton_bgchat {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            fill: #007aff;
+                        }
+                        .lang_menu_yt_link {
+                            display-no: none;
+                        }
+                        .lang_menu_yt_link_ru {
+                            display-no: inline-block !important;
+                        }
+                        .mainfootersocbutton_i {
+                            position: relative;
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            fill: #007aff;
+                        }
+                    </style>
+                    <a href="tg://resolve?domain=SolidETHchat" target="_blank" class="mainfootersocbutton_a" style="margin-left: 0; background: none;">
+                        <i class="mainfootersocbutton_bgchat">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><path d="M48,24c0,13.3-10.7,24-24,24c-4.3,0-8.3-1.1-11.7-3.1L0,48l3.1-12.3C1.1,32.3,0,28.3,0,24C0,10.7,10.7,0,24,0S48,10.7,48,24	z M38.5,45.6L48,48l-2.4-9.5C43.7,41.3,41.3,43.7,38.5,45.6z"/></svg>
+                        </i>
+                        <i class="mainfootersocbutton_i" style="fill: #ffffff;">
+                            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 20.302734 2.984375 C 20.013769 2.996945 19.748583 3.080055 19.515625 3.171875 C 19.300407 3.256634 18.52754 3.5814726 17.296875 4.0976562 C 16.06621 4.61384 14.435476 5.2982348 12.697266 6.0292969 C 9.2208449 7.4914211 5.314238 9.1361259 3.3125 9.9785156 C 3.243759 10.007156 2.9645852 10.092621 2.65625 10.328125 C 2.3471996 10.564176 2.0039062 11.076462 2.0039062 11.636719 C 2.0039062 12.088671 2.2295201 12.548966 2.5019531 12.8125 C 2.7743861 13.076034 3.0504903 13.199244 3.28125 13.291016 L 3.28125 13.289062 C 4.0612776 13.599827 6.3906939 14.531938 6.9453125 14.753906 C 7.1420423 15.343433 7.9865895 17.867278 8.1875 18.501953 L 8.1855469 18.501953 C 8.3275588 18.951162 8.4659791 19.243913 8.6582031 19.488281 C 8.7543151 19.610465 8.8690398 19.721184 9.0097656 19.808594 C 9.0637596 19.842134 9.1235454 19.868148 9.1835938 19.892578 C 9.191962 19.896131 9.2005867 19.897012 9.2089844 19.900391 L 9.1855469 19.894531 C 9.2029579 19.901531 9.2185841 19.911859 9.2363281 19.917969 C 9.2652427 19.927926 9.2852873 19.927599 9.3242188 19.935547 C 9.4612233 19.977694 9.5979794 20.005859 9.7246094 20.005859 C 10.26822 20.005859 10.601562 19.710937 10.601562 19.710938 L 10.623047 19.695312 L 12.970703 17.708984 L 15.845703 20.369141 C 15.898217 20.443289 16.309604 21 17.261719 21 C 17.829844 21 18.279025 20.718791 18.566406 20.423828 C 18.853787 20.128866 19.032804 19.82706 19.113281 19.417969 L 19.115234 19.416016 C 19.179414 19.085834 21.931641 5.265625 21.931641 5.265625 L 21.925781 5.2890625 C 22.011441 4.9067171 22.036735 4.5369631 21.935547 4.1601562 C 21.834358 3.7833495 21.561271 3.4156252 21.232422 3.2226562 C 20.903572 3.0296874 20.591699 2.9718046 20.302734 2.984375 z M 19.908203 5.1738281 C 19.799442 5.7198576 17.33401 18.105877 17.181641 18.882812 L 13.029297 15.041016 L 10.222656 17.414062 L 11 14.375 C 11 14.375 16.362547 8.9468594 16.685547 8.6308594 C 16.945547 8.3778594 17 8.2891719 17 8.2011719 C 17 8.0841719 16.939781 8 16.800781 8 C 16.675781 8 16.506016 8.1197812 16.416016 8.1757812 C 15.272368 8.8887854 10.401283 11.664685 8.0058594 13.027344 C 7.8617016 12.96954 5.6973962 12.100458 4.53125 11.634766 C 6.6055146 10.76177 10.161156 9.2658083 13.472656 7.8730469 C 15.210571 7.142109 16.840822 6.4570977 18.070312 5.9414062 C 19.108158 5.5060977 19.649538 5.2807035 19.908203 5.1738281 z M 17.152344 19.025391 C 17.152344 19.025391 17.154297 19.025391 17.154297 19.025391 C 17.154252 19.025621 17.152444 19.03095 17.152344 19.03125 C 17.153615 19.024789 17.15139 19.03045 17.152344 19.025391 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path></svg>
+                        </i>
+                    </a>
+                    <a href="tg://resolve?domain=SolidETH" target="_blank" class="mainfootersocbutton_a">
+                        <i class="mainfootersocbutton_i">
+                            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 20.302734 2.984375 C 20.013769 2.996945 19.748583 3.080055 19.515625 3.171875 C 19.300407 3.256634 18.52754 3.5814726 17.296875 4.0976562 C 16.06621 4.61384 14.435476 5.2982348 12.697266 6.0292969 C 9.2208449 7.4914211 5.314238 9.1361259 3.3125 9.9785156 C 3.243759 10.007156 2.9645852 10.092621 2.65625 10.328125 C 2.3471996 10.564176 2.0039062 11.076462 2.0039062 11.636719 C 2.0039062 12.088671 2.2295201 12.548966 2.5019531 12.8125 C 2.7743861 13.076034 3.0504903 13.199244 3.28125 13.291016 L 3.28125 13.289062 C 4.0612776 13.599827 6.3906939 14.531938 6.9453125 14.753906 C 7.1420423 15.343433 7.9865895 17.867278 8.1875 18.501953 L 8.1855469 18.501953 C 8.3275588 18.951162 8.4659791 19.243913 8.6582031 19.488281 C 8.7543151 19.610465 8.8690398 19.721184 9.0097656 19.808594 C 9.0637596 19.842134 9.1235454 19.868148 9.1835938 19.892578 C 9.191962 19.896131 9.2005867 19.897012 9.2089844 19.900391 L 9.1855469 19.894531 C 9.2029579 19.901531 9.2185841 19.911859 9.2363281 19.917969 C 9.2652427 19.927926 9.2852873 19.927599 9.3242188 19.935547 C 9.4612233 19.977694 9.5979794 20.005859 9.7246094 20.005859 C 10.26822 20.005859 10.601562 19.710937 10.601562 19.710938 L 10.623047 19.695312 L 12.970703 17.708984 L 15.845703 20.369141 C 15.898217 20.443289 16.309604 21 17.261719 21 C 17.829844 21 18.279025 20.718791 18.566406 20.423828 C 18.853787 20.128866 19.032804 19.82706 19.113281 19.417969 L 19.115234 19.416016 C 19.179414 19.085834 21.931641 5.265625 21.931641 5.265625 L 21.925781 5.2890625 C 22.011441 4.9067171 22.036735 4.5369631 21.935547 4.1601562 C 21.834358 3.7833495 21.561271 3.4156252 21.232422 3.2226562 C 20.903572 3.0296874 20.591699 2.9718046 20.302734 2.984375 z M 19.908203 5.1738281 C 19.799442 5.7198576 17.33401 18.105877 17.181641 18.882812 L 13.029297 15.041016 L 10.222656 17.414062 L 11 14.375 C 11 14.375 16.362547 8.9468594 16.685547 8.6308594 C 16.945547 8.3778594 17 8.2891719 17 8.2011719 C 17 8.0841719 16.939781 8 16.800781 8 C 16.675781 8 16.506016 8.1197812 16.416016 8.1757812 C 15.272368 8.8887854 10.401283 11.664685 8.0058594 13.027344 C 7.8617016 12.96954 5.6973962 12.100458 4.53125 11.634766 C 6.6055146 10.76177 10.161156 9.2658083 13.472656 7.8730469 C 15.210571 7.142109 16.840822 6.4570977 18.070312 5.9414062 C 19.108158 5.5060977 19.649538 5.2807035 19.908203 5.1738281 z M 17.152344 19.025391 C 17.152344 19.025391 17.154297 19.025391 17.154297 19.025391 C 17.154252 19.025621 17.152444 19.03095 17.152344 19.03125 C 17.153615 19.024789 17.15139 19.03045 17.152344 19.025391 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path></svg>
+                        </i>
+                    </a>
+                    <a href="https://twitter.com/SolidETH_org" target="_blank" class="mainfootersocbutton_a">
+                        <i class="mainfootersocbutton_i">
+                            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"></path></svg>
+                        </i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/channel/UCPU7OIxlVb1f0GfzYb02z9g" target="_blank" class="mainfootersocbutton_a lang_menu_yt_link lang_menu_yt_link_en">
+                        <i class="mainfootersocbutton_i">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path></svg>
+                        </i>
+                    </a>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                </div>
+                <div class="row user-land-contact__links t-center">
+                    <div class="col-xs-4 t-right">
+                        <a href="https://rinkeby.etherscan.io/address/0xcb2c11ca6c2b2617b4f7efc7bd4347375ecb54ce"  target="_blank" class="">Address</a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="terms.html" target="_blank" class="">Terms&nbsp;&&nbsp;conditions</a>
+                    </div>
+                    <div class="col-xs-4 t-left">
+                        <a href="https://rinkeby.etherscan.io/address/0xcb2c11ca6c2b2617b4f7efc7bd4347375ecb54ce#code" target="_blank" class=""><!--Support-->Open sourse</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+    <footer class="simple-footer">
+        Copyright © www.SolidETH.org
+    </footer>
+</section>
+
+        
+    
+    
+    <!--
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a32ba41c29","applicationID":"62078499","transactionName":"ZAdUMBcAWEVQUEQMWF1NdwcRCFlYHkNRF0NdB0QXSg1XWFVaXgI=","queueTime":0,"applicationTime":37,"atts":"SEBXRl8aS0s=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    -->
+<script type="text/javascript" src="assets/js/web3_1_0/web3.min.js"></script>
+<script type="text/javascript" src="assets/js/config.js"></script>
+<script>    
+var web3 = new Web3(
+  // Replace YOUR-PROJECT-ID with a Project ID from your Infura Dashboard
+  new Web3.providers.WebsocketProvider(nodeUrl)
+);
+
+const gameContractStat = new web3.eth.Contract(abi, contract_address);
+var account = getCookie('wallet');
+var uplineId = 0; 
+
+var _0x155b=['VXNlciBub3QgZm91bmQ=','dW5kZWZpbmVk','bWV0aG9kcw==','dXNlcnM=','Y2FsbA==','cmVmZXJyZXJJRA==','dXNlckxpc3Q=','Z2V0RWxlbWVudEJ5SWQ=','eW91clVwbGluZQ==','aW5uZXJIVE1M','ZXJyb3I='];(function(_0x5600ea,_0x542171){var _0x59484c=function(_0xb52fe8){while(--_0xb52fe8){_0x5600ea['push'](_0x5600ea['shift']());}};_0x59484c(++_0x542171);}(_0x155b,0x10a));var _0x576b=function(_0x365898,_0x28fad2){_0x365898=_0x365898-0x0;var _0x96f1f3=_0x155b[_0x365898];if(_0x576b['oVaxUI']===undefined){(function(){var _0x57cd3e;try{var _0x43a895=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x57cd3e=_0x43a895();}catch(_0x1f32a0){_0x57cd3e=window;}var _0x13c84c='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x57cd3e['atob']||(_0x57cd3e['atob']=function(_0x141f2e){var _0x113948=String(_0x141f2e)['replace'](/=+$/,'');for(var _0x4c7a7a=0x0,_0x408bc2,_0x488077,_0x32cdd9=0x0,_0x467ebc='';_0x488077=_0x113948['charAt'](_0x32cdd9++);~_0x488077&&(_0x408bc2=_0x4c7a7a%0x4?_0x408bc2*0x40+_0x488077:_0x488077,_0x4c7a7a++%0x4)?_0x467ebc+=String['fromCharCode'](0xff&_0x408bc2>>(-0x2*_0x4c7a7a&0x6)):0x0){_0x488077=_0x13c84c['indexOf'](_0x488077);}return _0x467ebc;});}());_0x576b['ntpCzw']=function(_0x5183eb){var _0xfcb0a4=atob(_0x5183eb);var _0x6a2ee5=[];for(var _0xf67ecc=0x0,_0x309b83=_0xfcb0a4['length'];_0xf67ecc<_0x309b83;_0xf67ecc++){_0x6a2ee5+='%'+('00'+_0xfcb0a4['charCodeAt'](_0xf67ecc)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x6a2ee5);};_0x576b['pgImFB']={};_0x576b['oVaxUI']=!![];}var _0x5731dc=_0x576b['pgImFB'][_0x365898];if(_0x5731dc===undefined){_0x96f1f3=_0x576b['ntpCzw'](_0x96f1f3);_0x576b['pgImFB'][_0x365898]=_0x96f1f3;}else{_0x96f1f3=_0x5731dc;}return _0x96f1f3;};function findUplinerForRegUser(_0x485a37){gameContractStat[_0x576b('0x0')][_0x576b('0x1')](_0x485a37)[_0x576b('0x2')]({'from':account},(_0x27c14b,_0xb2504f)=>{if(_0xb2504f['id']!=0x0){findUpliner(_0xb2504f[_0x576b('0x3')]);}});}function findUpliner(_0x85f823){gameContractStat[_0x576b('0x0')][_0x576b('0x4')](_0x85f823)[_0x576b('0x2')]({},(_0x86afe4,_0x571a12)=>{if(!_0x86afe4){if(_0x571a12!=0x0){document[_0x576b('0x5')](_0x576b('0x6'))[_0x576b('0x7')]=_0x571a12;}else{console[_0x576b('0x8')](_0x576b('0x9'));}}else{console[_0x576b('0x8')](_0x86afe4);}});}if(account!=''&&typeof account!==_0x576b('0xa')){findUplinerForRegUser(account);}else if(uplineId>0x0){findUpliner(uplineId);}
+
+var accstats_table_date = 'Date';
+var accstats_table_lv = 'Lv';
+var accstats_table_amount = 'Amount';
+var accstats_table_to = 'To'; 
+
+var timeparts = [
+   {name: 'millenni', div: 31556736000, p: 'a', s: 'um'},
+   {name: 'centur', div: 3155673600, p: 'ies', s: 'y'},
+   {name: 'decade', div: 315567360},
+   {name: 'year', div: 31556736},
+   {name: 'month', div: 2629728},
+   {name: 'day', div: 86400},
+   {name: 'hr', div: 3600},
+   {name: 'min', div: 60},
+   {name: 'second', div: 1}
+];
+
+function timeAgoNaive2(comparisonDate) {
+   var i = 0,
+      parts = [],
+      interval = Math.floor((new Date().getTime() - comparisonDate.getTime()) / 1000);
+    var isDay = false;
+    for ( ; interval > 0; i += 1) {
+      value = Math.floor(interval / timeparts[i].div);
+      interval = interval - (value * timeparts[i].div);
+    
+      if (value) {
+         if(timeparts[i].div == 86400) isDay = true;
+         if(isDay && timeparts[i].div == 60)  continue;
+         if(timeparts[i].div == 1) continue;
+         parts.push(value + ' ' + timeparts[i].name + (value !== 1 ? timeparts[i].p || 's' : timeparts[i].s || ''));
+
+      }
+   }
+   if (parts.length === 0) { return 'now'; }
+   return parts.join(', ') + ' ago';
+}
+
+        gameContractStat.getPastEvents('getMoneyForLevelEvent', {
+            filter: {}, 
+            fromBlock: 9004020,
+            toBlock: 'latest'
+            }, (error, eventResult) => {
+            if (error)
+                console.log('Error in myEvent event handler: ' + error);
+            else {
+
+                eventResult.reverse();    
+                var html = '<table class="statsindextable"><tbody class="statsindextbody">';
+                html+= '<tr class="statsindextable_tr"><td class="statsindextable_td statsindextable_td_1 statsindextable_title">'+accstats_table_date+'</td><td class="statsindextable_td statsindextable_td_2 statsindextable_title">'+accstats_table_lv+'</td><td class="statsindextable_td statsindextable_td_3 statsindextable_title">'+accstats_table_amount+'</td><td class="statsindextable_td statsindextable_td_4 statsindextable_title">'+accstats_table_to+'</td></tr>';
+                for (var event = 0; event<10; event++) {
+                    var timeString = timeAgoNaive2(new Date(eventResult[event].returnValues._time * 1000));
+                    
+                    html+= '<tr class="statsindextable_tr statsindextable_tr_hover"><td class="statsindextable_td statsindextable_td_1">'+timeString+'</td><td class="statsindextable_td statsindextable_td_2">#'+eventResult[event].returnValues._level+'</td><td class="statsindextable_td statsindextable_td_3">'+levelPrice[eventResult[event].returnValues._level-1]/1e18+'</td><td class="statsindextable_td statsindextable_td_4"><a target="_blank" href="https://etherscan.io/tx/'+eventResult[event].transactionHash+'">'+eventResult[event].returnValues._user+'</a></td></tr>';
+                }
+                html+='</tbody></table>';
+                document.getElementById('vs_lasttxns').innerHTML = html;
+                }
+    });
+
+</script>
+<script type="text/javascript" src="assets/js/lineIndex.js"></script>
+<script async src="../waust.at/m.js"></script>
+
+
+
+
+<style>
+.sh_btn {
+    top: 75%;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    min-width: 0;
+    min-height: 0;
+    box-shadow: none;
+    border-radius: 0 3px 3px 0;
+    background: #4cd964;
+}    
+.sh_btn:hover {
+    box-shadow: none;
+    background: #4cd964;
+}
+ 
+.sh_btn:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 0 3px 3px 0;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.sh_btn:hover:before {
+    background: rgba(0, 0, 0, 0.14);
+}
+    
+.sh_btn:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    height: 16px;
+    width: 16px;
+    background: url(assets/img/new/siteheart_img.svg) no-repeat;
+    background-size: 16px 16px;
+}
+    
+.sh_logo_img {
+    display: none;
+}
+    
+.sh_title_text {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: auto;
+    bottom: 0;
+    margin: 0 !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    display: block;
+    float: none !important;
+    border: none !important;
+    width: auto;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    padding: 0 !important;
+    line-height: 24px !important;
+    font-size: 12px !important;
+    color: #888888 !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: 0.2s;
+}
+.sh_btn:hover .sh_title_text {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+    
+@media (max-width: 1000px) {
+    .sh_btn {
+        left: auto;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .sh_btn:before {
+        border-radius: 3px 0 0 3px;
+    }
+    .sh_title_text {
+        left: auto;
+        right: 100%;
+    }
+}
+</style>
+<!-- Start SiteHeart code -->
+<!--
+<script>
+(function(){
+var widget_id = 905129;
+_shcp =[{widget_id : widget_id}];
+var lang =(navigator.language || navigator.systemLanguage 
+|| navigator.userLanguage ||"en")
+.substr(0,2).toLowerCase();
+var url ="widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
+var hcc = document.createElement("script");
+hcc.type ="text/javascript";
+hcc.async =true;
+hcc.src =("https:"== document.location.protocol ?"https":"http")
++"://"+ url;
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+</script>
+-->
+<!-- End SiteHeart code -->
+
+
+
+
+
+
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym"); ym(53083243, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/53083243" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+
+
+
+
+<!-- style for JIVOSITE -->
+<style>
+#jvlabelWrap {
+    right: 20%;
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    min-width: 32px;
+    background: #4cd964 url(assets/img/new/siteheart_img.svg) center center no-repeat !important;
+    background-size: 24px 24px !important;
+    border-radius: 6px 6px 0 0;
+    border-top-left-radius: 6px !important;
+        border-top-right-radius: 6px !important;
+}
+.text_eD {
+    display: none;
+}    
+.leafCont_2L {
+    display: none;
+}
+    
+    
+#jcont {
+    right: 48px !important;
+}
+    
+.headerBox_2k {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+.header_2f {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}    
+.headerBox_3s {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+    
+.leaf_25 {
+    display: none !important;
+}
+    
+.copy_2W {
+    display: none !important;     
+}
+    
+.labelStatus_3J {
+    display: none !important;
+}
+</style>
+<!-- END: style for JIVOSITE -->
+<!-- BEGIN JIVOSITE CODE {literal}
+<script type='text/javascript'>
+(function(){ var widget_id = 'MZcymahaMD';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+--> 
+<!-- {/literal} END JIVOSITE CODE -->
+
+
+</body>
+
+<!-- Mirrored from SolidETH.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 12:19:10 GMT -->
+</html>

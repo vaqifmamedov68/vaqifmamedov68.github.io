@@ -1,0 +1,1385 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from SolidETH.org/referralsold.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 13:16:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n); console.log(t.src);}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="content-language" content="en">
+    
+    <title>SolidETH - The easiest and fastest way to make money in crypto industry</title>
+    <meta name="description" content="The first risk-free blockchain project">
+    <meta name="keywords" content="SolidETH, crypto, hands, mlm, multilevelmarketing, multi, level, marketing, blockchain, cryptocurrency, ethereum, eth, smartcontract, smart, contract, earn, income, profit, invest, investment, investing, project, withoutrisk, risk">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!--
+    <meta property="og:locale" content="en_EN"/>
+    -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="SolidETH - The easiest and fastest way to make money in crypto industry"/>
+    <meta property="og:description" content="The first risk-free blockchain project"/>
+    <meta property="og:image" content="logo/share_start.png"/>
+    <meta property="og:url" content="index.html"/>
+    <meta property="og:site_name" content="SolidETH"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SolidETH_org">
+    <meta name="twitter:title" content="SolidETH - The easiest and fastest way to make money in crypto industry">
+    <meta name="twitter:description" content="The first risk-free blockchain project">
+    <meta name="twitter:image" content="logo/share_start.png">
+    
+    <meta itemprop="name" content="SolidETH - The easiest and fastest way to make money in crypto industry"/>
+    <meta itemprop="description" content="The first risk-free blockchain project"/>
+    <meta itemprop="image" content="logo/share_start.png"/>
+    
+    <meta itemscope itemtype="http://schema.org/Article">
+    <meta itemprop="headline" content="SolidETH - The easiest and fastest way to make money in crypto industry">
+    <meta itemprop="description" content="The first risk-free blockchain project">
+    <meta itemprop="image" content="logo/share_start.png">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!--
+    <link rel="icon" href="./favicon.svg" sizes="any" type="image/svg+xml">
+    -->
+    
+    
+    <link rel="stylesheet" href="assets/js/selectize/css/selectize.bootstrap3.css" />
+
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/js/venobox/venobox68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/js/lightbox/css/lightbox68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/css/core3fa9.css?1494886465">
+    <link rel="stylesheet" href="assets/css/jrange/css/ion.rangeSlider68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/css/jrange/css/ion.rangeSlider.skinFlat68f8.css?1485983083">
+    <link rel="stylesheet" href="assets/css/new_v27383.css?1507840484">
+    <link rel="stylesheet" href="assets/css/animation98b9.css?1498309791">
+    <link rel="stylesheet" href="assets/css/pagesd2fd.css?1507001790">
+    <link rel="stylesheet" href="assets/css/mobile3fa9.css?1494886465">
+    <link rel="stylesheet" href="assets/css/mobile_new98b9.css?1498309791">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/venobox/venobox.min68f8.js?1485983083"></script>
+    <script src="assets/js/lightbox/js/lightbox68f8.js?1485983083"></script>
+    <script src="assets/js/core0b03.js?1507873861"></script>
+    <script src="assets/js/bootstrap.min68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/jquery.vide68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/gmap68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/venobox/venobox.min68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/jrange/js/ion.rangeSlider68f8.js?1485983083"></script>
+
+
+
+
+    <link rel="stylesheet" href="assets/css/basef660.css?1496448411">
+    <link rel="stylesheet" href="assets/css/slick/slick68f8.css?1485983083">
+    <script type="text/javascript" src="assets/js/jquery.countto68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/slick/slick68f8.js?1485983083"></script>
+    <script type="text/javascript" src="assets/js/marquee68f8.js?1485983083"></script>
+    <script src="assets/js/amcharts/amcharts.js" type="text/javascript"></script>
+    <script src="assets/js/amcharts/serial.js" type="text/javascript"></script>
+    <script src="assets/js/amcharts/amstock.js" type="text/javascript"></script>
+    <script src="assets/js/amcharts/light.js" type="text/javascript"></script>
+    <script src="assets/js/chart.js" type="text/javascript"></script>
+    <script src="assets/js/moment.js" type="text/javascript"></script>
+    <script src="assets/js/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <!--<script src="./assets/js/trading_v2.js" type="text/javascript"></script>-->
+    
+    <script src="assets/js/selectize/js/standalone/selectize.min.js"></script>
+    
+    
+    <script>
+        const btcPrice=49.054671431801;
+        const usdtPrice=0.0067442393440331;
+    </script>   
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+<body class="non-animation pa bodyaccountno bodylang_en" id="top">
+    
+    
+    
+    
+    
+
+    
+    
+<style>.bodyaccountno_demo_block {position: fixed; top: 30%; left: 30%; right: 30%; bottom: 30%; width: 40%; height: 40%; z-index: 100; opacity: 0.14; display: none; } .bodyaccountno .bodyaccountno_demo_block {display: block;}</style>
+<svg class="bodyaccountno_demo_block" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 360" enable-background="new 0 0 640 360" xml:space="preserve" ><rect fill="none" width="640" height="360"/><rect display="none" fill="#F2F2F2" width="640" height="360"/><g><path fill="#FF3B30" d="M0,255.6V104.2h59.6c15.6,0,29.5,3.1,41.7,9.4c12.2,6.2,21.6,15.1,28.4,26.6s10.1,24.8,10.1,39.8 c0,15-3.4,28.2-10.1,39.7c-6.7,11.5-16.2,20.3-28.4,26.5s-26.1,9.3-41.7,9.3H0z M32.2,227.2h27.5c14.5,0,26-4.5,34.6-13.6 c8.6-9.1,12.9-20.3,12.9-33.6c0-14-4.1-25.4-12.4-34.2c-8.3-8.8-19.9-13.2-35-13.2H32.2V227.2z"/><path fill="#FF3B30" d="M162.9,255.6V104.2H270v28.4h-74.9v32h73.2V193h-73.2v34.2H270v28.4H162.9z"/><path fill="#FF3B30" d="M295.1,255.6V104.2h45.2l36.7,91.4l36.8-91.4h45.2v151.4h-32.2V149.6L384,255.6H370l-42.7-105.9v105.9 H295.1z"/><path fill="#FF3B30" d="M487.8,211.6c-4-9.7-5.9-20.2-5.9-31.4c0-11.2,2-21.7,5.9-31.5c4-9.8,9.4-18.1,16.3-24.9 c6.9-6.8,15.3-12.2,25.1-16.2c9.8-3.9,20.3-5.9,31.5-5.9c15.1,0,28.7,3.3,40.8,10c12,6.7,21.5,16,28.3,28 c6.8,12,10.2,25.5,10.2,40.5c0,15-3.4,28.5-10.2,40.4c-6.8,11.9-16.2,21.2-28.3,27.8c-12,6.6-25.6,9.9-40.8,9.9 c-11.2,0-21.7-2-31.5-5.9c-9.8-3.9-18.2-9.3-25.1-16.1C497.2,229.6,491.8,221.3,487.8,211.6z M515,180.2c0,14.3,4.2,26.2,12.6,35.7 c8.4,9.4,19.4,14.1,33.2,14.1s24.9-4.7,33.4-14.1c8.5-9.4,12.7-21.3,12.7-35.7c0-14.4-4.2-26.3-12.7-35.7c-8.5-9.4-19.6-14-33.4-14 s-24.8,4.7-33.2,14C519.2,153.9,515,165.7,515,180.2z"/></g></svg>
+    
+    
+<style>
+    .langbuttons-block {
+        display: none !important;
+    }
+</style>
+<style>
+    .langbutton-en {
+
+    }
+    .langbutton-en:before {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -3px;
+        margin-right: 12px;
+        display: block;
+        height: 6px;
+        width: 6px;
+        background: #888888;
+        background-n0: rgba(0, 0, 0, 0.14);
+        border-radius: 3px;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.2s;
+    }
+    .langbutton-en:hover:before {
+        visibility: hidden;
+        opacity: 0;
+    }
+</style>
+
+
+<div class="langbuttons-block " style="margin-top: -192px;">
+    
+    <div class="langbutton langbutton-en">
+        <span class="langbutton-descr">English</span>
+        <a href="referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/en.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-cn">
+        <span class="langbutton-descr">中文</span>
+        <a href="cn/referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/cn.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-ru">
+        <span class="langbutton-descr">Русский</span>
+        <a href="ru/referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/ru.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-es">
+        <span class="langbutton-descr">Español</span>
+        <a href="es/referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/es.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-it">
+        <span class="langbutton-descr">Italiano</span>
+        <a href="it/referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/it.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-de">
+        <span class="langbutton-descr">Deutsch</span>
+        <a href="de/referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/de.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-fr">
+        <span class="langbutton-descr">Français</span>
+        <a href="fr/referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/fr.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-hi">
+        <span class="langbutton-descr">हिंदी</span>
+        <a href="hi/referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/hi.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-ja">
+        <span class="langbutton-descr">日本語</span>
+        <a href="ja/referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/ja.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    <div class="langbutton langbutton-kr">
+        <span class="langbutton-descr">한국어</span>
+        <a href="kr/referralsold.html" class="langbutton-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/kr.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    
+    
+    
+    <div class="langbutton langbutton-more">
+        <span class="langbutton-descr">other</span>
+        <a id="langbutton-more-a" class="langbutton-a langbutton-more-a">
+            <i class="langbutton-i">
+                <img src="assets/img/new/flags/more.svg" class="langbutton-img">
+            </i>
+        </a>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+<div id="lbother-section" class="lbother-section">
+    <a id="lbother-closebtn" class="lbother-closebtn">
+        <i class="lbother-closebtn-i">
+            <svg fill="#007aff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 5.7070312 4.2929688 L 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 L 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 L 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 L 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path>
+            </svg>
+        </i>
+    </a>
+    <div class="lbother-contentblock">
+        <div class="row">
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/en.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">English</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="cn/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/cn.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">中文</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ru/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ru.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Русский</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="es/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/es.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Español</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="it/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/it.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Italiano</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="de/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/de.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Deutsch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="fr/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/fr.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Français</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="hi/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/hi.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">हिंदी</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ja/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ja.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">日本語</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="kr/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/kr.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">한국어</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4" style="display: none;">
+                <div class="lbother-langblock">
+                    <a href="ar/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ar.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">العربية</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="bn/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" >
+                            <img src="assets/img/new/flags/bn.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">বাংলা</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="id/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/id.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Bahasa Indonesia</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="vi/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/vi.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Tiếng Việt</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            
+            
+           <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="pt/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/pt.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Português</span>
+                    </a>
+                </div>
+            </div> 
+            
+            
+            
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="nl/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/nl.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Nederlands</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="fl/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/fl.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Filipino</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ms/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ms.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Bahasa Melayu</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="uk/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/uk.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Українська Мова</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="kk/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/kk.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Қазақ Тілі</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="tr/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/tr.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Türkçe</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="cs/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/cs.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Čeština</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="pl/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/pl.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Język Polski</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="hu/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/hu.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Magyar Nyelv</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a href="ro/referralsold.html" class="lbother-langblock-a">
+                        <i class="lbother-langblock-i">
+                            <img src="assets/img/new/flags/ro.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Limba română</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="lbother-langblock">
+                    <a class="lbother-langblock-a">
+                        <i class="lbother-langblock-i" style="background: #dfdfdf;">
+                            <img src="assets/img/new/flags/more.svg" class="lbother-langblock-img">
+                        </i>
+                        <span class="lbother-langblock-descr">Coming soon</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    document.getElementById('langbutton-more-a').onclick = function() {
+        document.getElementById('lbother-section').classList.add('lbother-section-active');
+    }
+</script>
+
+<script type="text/javascript">
+    document.getElementById('lbother-closebtn').onclick = function() {
+        document.getElementById('lbother-section').classList.remove('lbother-section-active');
+    }
+</script>
+
+
+<div class="loader-wrapper" id="loader-wrapper" style="display: none;">
+    <div class="loader">
+        <div class="loader__inner loader__inner--1"></div>
+        <div class="loader__inner loader__inner--2"></div>
+        <div class="loader__inner loader__inner--3"></div>
+		<div class="loader__inner loader__inner--4"></div>
+    </div>
+</div>
+
+<nav class="top-menu top-menu--inverse js-topmenu">
+    <div class="clearfix">
+        <div class="row">
+            <div class="col-md-3" style="display: flex; height: 60px;">
+                <a href="index.html" class="logo">
+                    <img class="main-light-logo" src="logo/avatar_favicon_sq.svg" alt="" height="48" style="height: 48px; width: auto; max-width: 250px;     border-radius: 30%;">
+                </a>
+            </div>
+            <div class="col-md-9 top-menu__right">
+                <div class="nav-top">
+                    <ul class="nav-top__list">
+                        <li class="nav-top__item nav-top__item--bold first"><a href="index.html" class="nav-top__link nav-top__link--bold">Main</a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="tg://resolve?domain=SolidETHchat" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-telegram"></i></a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="tg://resolve?domain=SolidETH" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="https://twitter.com/SolidETH_org" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-twitter"></i></a></li>
+                        
+                        <li class="nav-top__item nav-top__item--bold lang_menu_yt_link lang_menu_yt_link_en"><a href="https://www.youtube.com/channel/UCPU7OIxlVb1f0GfzYb02z9g" target="_blank" class="nav-top__link nav-top__link--bold"><i class="fab fa-youtube"></i></a></li>
+                        
+                        <li class="nav-top__item nav-top__item--bold"><a href="howitworks.html" class="nav-top__link nav-top__link--bold">How it works</a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="faq.html" class="nav-top__link nav-top__link--bold">FAQ</a></li>
+                        <li class="nav-top__item nav-top__item--bold"><a href="faqeth.html" class="nav-top__link nav-top__link--bold">Ethereum FAQ</a></li>
+                        <li class="nav-top__item nav-top__item--bold last" style="display: none;"><a href="support.html" class="nav-top__link nav-top__link--bold">Support</a></li>
+                    </ul>
+                    <div class="dropdown-h dropdown-h--pa">
+                        <span class="dropdown-h__cur">
+                            <img src="assets/img/new/pa_icon_user.svg" width="24" alt=""><span>Account</span>
+                        </span>
+                        <ul class="dropdown-h__list text-center">
+                            <li class="dropdown-h__fullname">
+                                <p class="owner-email-key__lastname" id="vs_user_account_header">id: ---</p>
+                                <p class="owner-email-key__firstname" style="text-transform: none;" id="vs_user_account_id_header">---</p>
+                            </li>
+                            <li class="pa-text pa-text--grey">Total income</li>
+                            <li class="pa-money"><i class="fab fa-ethereum"></i> <span id="vs_dshbrd_totalincome_header"><i class="fas fa-ellipsis-h"></i></span>  ETH</li>
+                            <li class="pa-text pa-text--grey">Total referrals</li>
+                            <li class="pa-money"><i class="fas fa-user"></i> Coming soon</li>
+            
+                            <style>
+                                .bodyaccountyes .li_drop_logout_no {
+                                    display: none;
+                                }
+                                .bodyaccountno .li_drop_logout_yes {
+                                    display: none; 
+                                }
+                            </style>
+                            <li class="li_drop_logout_yes"><a href="logout.html" class="pa-btn text-center">Logout</a></li>
+                            <li class="li_drop_logout_no"><a href="signup.html" class="pa-btn text-center">Logout</a></li>
+                        
+                        </ul>
+        
+                    </div>
+                    <div class="languages" style="display: none;">
+                        <span class="language language--cur">
+                            ENG
+                        </span>
+                        <ul class="languages__list">
+                            <li><a href="referralsold3322.html?lang=de" class="language">DE</a></li>
+                            <li><a href="referralsold923c.html?lang=pt" class="language">POR</a></li>
+                            <li><a href="referralsoldcf53.html?lang=it" class="language">IT</a></li>
+                            <li><a href="referralsoldc69a.html?lang=es" class="language">ES</a></li>
+                            <li><a href="referralsold9ed2.html?lang=en" class="language">ENG</a></li>
+                            <li><a href="referralsold2139.html?lang=ru" class="language">RUS</a></li>
+                            <li><a href="referralsolde68f.html?lang=fr" class="language">FR</a></li>
+                            <li><a href="referralsolddb38.html?lang=cn" class="language">中文</a></li>
+                            <li><a href="referralsold2296.html?lang=tr" class="language">TR</a></li>
+                            <li><a href="referralsoldef8e.html?lang=hi" class="language">HI</a></li>
+                            <li><a href="referralsolde034.html?lang=vi" class="language">VI</a></li>
+                            <li><a href="referralsoldc9e6.html?lang=ja" class="language">日本語</a></li>
+                            <li><a href="referralsold7542.html?lang=ko" class="language">한국어</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div><!-- col-md-9 -->
+        </div><!-- row-->
+        
+        
+        <a id="langbuttonmobile-a" class="langbuttonmobile-a mobile-no">
+            <i class="langbuttonmobile-i">
+                <img src="assets/img/new/flags/en.svg" class="langbuttonmobile-img">
+            </i>
+        </a>
+        <script type="text/javascript">
+            document.getElementById('langbuttonmobile-a').onclick = function() {
+                document.getElementById('lbother-section').classList.add('lbother-section-active');
+            }
+        </script>
+        
+        
+        <button class="show-menu mobile">
+            <span></span>
+        </button>
+    </div><!-- container -->
+</nav><!--end top menu-->
+
+<section class="page page--pa" style="padding-bottom: 36px;">
+    <div class="currencies_vs">
+        
+        
+        
+        
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">total participants</div>
+            <div class="currency__data">
+                <img src="assets/img/new/pa_icon_bar.png" width="21" alt="" class="currency__chart" style="display: none;"><i class="fas fa-user"></i> <span id="vs_line_total_user" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">1 level</div>
+            <div class="currency__data">
+                <i class="fas fa-user"></i> <span id="vs_line_l1_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">2 level</div>
+            <div class="currency__data">
+                <i class="fas fa-user"></i> <span id="vs_line_l2_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">3 level</div>
+            <div class="currency__data">
+                <i class="fas fa-user"></i> <span id="vs_line_l3_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">4 level</div>
+            <div class="currency__data">
+                <i class="fas fa-user"></i> <span id="vs_line_l4_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">5 level</div>
+            <div class="currency__data">
+                <i class="fas fa-user"></i> <span id="vs_line_l5_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">6 level</div>
+            <div class="currency__data">
+                <i class="fas fa-user"></i> <span id="vs_line_l6_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">7 level</div>
+            <div class="currency__data">
+                <i class="fas fa-user"></i> <span id="vs_line_l7_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">8 level</div>
+            <div class="currency__data">
+                <i class="fas fa-user"></i> <span id="vs_line_l8_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">project years</div>
+            <div class="currency__data">
+                <i class="fas fa-calendar-alt"></i> <span id="vs_project_days" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">total transactions</div>
+            <div class="currency__data">
+                <i class="fas fa-chart-bar"></i> <span  id="vs_line_total_tx" class="currency__value"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">total ETH</div>
+            <div class="currency__data">
+                <i class="fab fa-ethereum"></i> <span id="vs_ETH_amuont" class="currency__value"><i class="fas fa-ellipsis-h"></i></span> <span class="currency__pair">ETH</span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">equivalent to BTC</div>
+            <div class="currency__data">
+                <i class="fab fa-bitcoin"></i> <span id="vs_BTC_amuont" class="currency__value"><i class="fas fa-ellipsis-h"></i></span> <span class="currency__pair">BTC</span>
+            </div>
+        </div>
+        <div class="currency">
+            <div class="currency__percent currency__percent--minus">equivalent to USD</div>
+            <div class="currency__data">
+                <i class="fas fa-dollar-sign"></i> <span id="vs_USDT_amuont" class="currency__value"><i class="fas fa-ellipsis-h"></i></span> <span class="currency__pair">USD</span>
+            </div>
+        </div>
+        
+        
+        
+        
+    
+    </div>
+
+    <nav class="right-nav">
+        <h2 class="right-nav__title">Private area</h2>
+        <a href="#" class="right-nav__show"></a>
+        <ul class="clearfix pa-navigation">
+            <li class="pa-navigation__item">
+                <a href="dashboard.html" class="pa-navigation__link pa-navigation__link--dashboard  pa-navigation__link--active-no ">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="pa-navigation__item" style="display: none;">
+                <a href="levelup.html" class="pa-navigation__link pa-navigation__link--levelup ">
+                    <span>Level Up</span>
+                </a>
+            </li>
+            <li class="pa-navigation__item" style="display: none;">
+                <a href="levels.html" class="pa-navigation__link pa-navigation__link--levels ">
+                    <span>My Levels</span>
+                </a>
+            </li> 
+            <li class="pa-navigation__item">
+                <a href="reflinks.html" class="pa-navigation__link pa-navigation__link--links ">
+                    <span>Referral Links</span>
+                </a>
+            </li>
+            <li class="pa-navigation__item">
+                <a href="qrcodes.html" class="pa-navigation__link pa-navigation__link--qrcodes ">
+                    <span>QR codes</span>
+                </a>
+            </li>
+            <li class="pa-navigation__item" style="display: none;">
+                <a href="offline.html" class="pa-navigation__link pa-navigation__link--offline ">
+                    <span>Invite offline</span>
+                </a>
+            </li>
+            <li class="pa-navigation__item">
+                <a href="transactions.html" class="pa-navigation__link pa-navigation__link--transactions ">
+                    <span>Transactions</span>
+                </a>
+            </li>
+            <li class="pa-navigation__item">
+                <a href="stats.html" class="pa-navigation__link pa-navigation__link--stats ">
+                    <span>Stats</span>
+                </a>
+            </li>
+            <li class="pa-navigation__item">
+                <a href="referrals.html" class="pa-navigation__link pa-navigation__link--team ">
+                    <span>Referrals</span>
+                </a>
+            </li>
+            
+            <li class="pa-navigation__item">
+                <a href="referralsold.html" class="pa-navigation__link pa-navigation__link--team ">
+                    <span>Referrals (old ver.)</span>
+                </a>
+            </li>
+            
+            <li class="pa-navigation__item">
+                <a href="uplines.html" class="pa-navigation__link pa-navigation__link--uplines  collapsed ">
+                    <span>Uplines</span>
+                </a>
+            </li>
+            
+            <style>
+                .bodyaccountyes .li_logout_bodyaccountno {
+                    display: none;
+                }
+                .bodyaccountno .li_logout_bodyaccountyes {
+                    display: none; 
+                }
+            </style>
+            <li class="pa-navigation__item li_logout_bodyaccountyes">
+                <a href="logout.html" class="pa-navigation__link pa-navigation__link--logout">
+                    <span>Log out</span>
+                </a>
+            </li>
+            <li class="pa-navigation__item li_logout_bodyaccountno">
+                <a href="signup.html" class="pa-navigation__link pa-navigation__link--logout">
+                    <span>Log out</span>
+                </a>
+            </li>
+            
+        </ul>
+        <ul class="right-nav__spec" style="display: none;">
+            <li class="nav-spec__item">
+                <a href="index.html" class="nav-spec__link nav-spec__link--dark">
+                    <img src="assets/img/new/pa_icon_left_corp.png" width="61" alt="">SolidETH
+                </a>
+            </li>
+            <li class="nav-spec__item">
+                <a href="index.html" class="nav-spec__link nav-spec__link--corp">
+                    <img src="assets/img/new/pa_icon_left_club.png" width="61" alt="">SolidETH CORPORATE
+                </a>
+            </li>
+        </ul>
+        
+        
+        <style>
+            .accfootersocbutton_a {
+                margin-left: 16px;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                border-radius: 24px;
+                background: #dfdfdf;
+                padding: 8px;
+            }
+            .accfootersocbutton_bgchat {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                fill: #007aff;
+            }
+            .accfootersocbutton_i {
+                position: relative;
+                display: block;
+                width: 16px;
+                height: 16px;
+                fill: #007aff;
+            }
+        </style>
+        <div class="nav-top__soc nav-top__soc--right" style="margin-top: 0;">
+            <a href="tg://resolve?domain=SolidETHchat" target="_blank" class="soc-top__link soc-top__link--right soc-top__link--fb-no accfootersocbutton_a" style="background: none;">
+                <i class="accfootersocbutton_bgchat">
+                    <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve"><path d="M32,16c0,8.9-7.1,16-16,16c-2.9,0-5.5-0.7-7.8-2.1L0,32l2.1-8.2C0.7,21.5,0,18.9,0,16C0,7.1,7.1,0,16,0S32,7.1,32,16z M25.2,30.3L32,32l-1.7-6.8C29,27.2,27.2,29,25.2,30.3z"/></svg>
+                </i>
+                <i class="accfootersocbutton_i" style="fill: #ffffff;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"><g><path style=" " d="M 26.070313 3.996094 C 25.734375 4.011719 25.417969 4.109375 25.136719 4.21875 L 25.132813 4.21875 C 24.847656 4.332031 23.492188 4.902344 21.433594 5.765625 C 19.375 6.632813 16.703125 7.757813 14.050781 8.875 C 8.753906 11.105469 3.546875 13.300781 3.546875 13.300781 L 3.609375 13.277344 C 3.609375 13.277344 3.25 13.394531 2.875 13.652344 C 2.683594 13.777344 2.472656 13.949219 2.289063 14.21875 C 2.105469 14.488281 1.957031 14.902344 2.011719 15.328125 C 2.101563 16.050781 2.570313 16.484375 2.90625 16.722656 C 3.246094 16.964844 3.570313 17.078125 3.570313 17.078125 L 3.578125 17.078125 L 8.460938 18.722656 C 8.679688 19.425781 9.949219 23.597656 10.253906 24.558594 C 10.433594 25.132813 10.609375 25.492188 10.828125 25.765625 C 10.933594 25.90625 11.058594 26.023438 11.207031 26.117188 C 11.265625 26.152344 11.328125 26.179688 11.390625 26.203125 C 11.410156 26.214844 11.429688 26.21875 11.453125 26.222656 L 11.402344 26.210938 C 11.417969 26.214844 11.429688 26.226563 11.441406 26.230469 C 11.480469 26.242188 11.507813 26.246094 11.558594 26.253906 C 12.332031 26.488281 12.953125 26.007813 12.953125 26.007813 L 12.988281 25.980469 L 15.871094 23.355469 L 20.703125 27.0625 L 20.8125 27.109375 C 21.820313 27.550781 22.839844 27.304688 23.378906 26.871094 C 23.921875 26.433594 24.132813 25.875 24.132813 25.875 L 24.167969 25.785156 L 27.902344 6.65625 C 28.007813 6.183594 28.035156 5.742188 27.917969 5.3125 C 27.800781 4.882813 27.5 4.480469 27.136719 4.265625 C 26.769531 4.046875 26.40625 3.980469 26.070313 3.996094 Z M 25.96875 6.046875 C 25.964844 6.109375 25.976563 6.101563 25.949219 6.222656 L 25.949219 6.234375 L 22.25 25.164063 C 22.234375 25.191406 22.207031 25.25 22.132813 25.308594 C 22.054688 25.371094 21.992188 25.410156 21.667969 25.28125 L 15.757813 20.75 L 12.1875 24.003906 L 12.9375 19.214844 C 12.9375 19.214844 22.195313 10.585938 22.59375 10.214844 C 22.992188 9.84375 22.859375 9.765625 22.859375 9.765625 C 22.886719 9.3125 22.257813 9.632813 22.257813 9.632813 L 10.082031 17.175781 L 10.078125 17.15625 L 4.242188 15.191406 L 4.242188 15.1875 C 4.238281 15.1875 4.230469 15.183594 4.226563 15.183594 C 4.230469 15.183594 4.257813 15.171875 4.257813 15.171875 L 4.289063 15.15625 L 4.320313 15.144531 C 4.320313 15.144531 9.53125 12.949219 14.828125 10.71875 C 17.480469 9.601563 20.152344 8.476563 22.207031 7.609375 C 24.261719 6.746094 25.78125 6.113281 25.867188 6.078125 C 25.949219 6.046875 25.910156 6.046875 25.96875 6.046875 Z "></path></g></svg>                
+                </i>
+            </a>
+            <a href="tg://resolve?domain=SolidETH" target="_blank" class="soc-top__link soc-top__link--right soc-top__link--fb-no accfootersocbutton_a">
+                <i class="accfootersocbutton_i">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"><g><path style=" " d="M 26.070313 3.996094 C 25.734375 4.011719 25.417969 4.109375 25.136719 4.21875 L 25.132813 4.21875 C 24.847656 4.332031 23.492188 4.902344 21.433594 5.765625 C 19.375 6.632813 16.703125 7.757813 14.050781 8.875 C 8.753906 11.105469 3.546875 13.300781 3.546875 13.300781 L 3.609375 13.277344 C 3.609375 13.277344 3.25 13.394531 2.875 13.652344 C 2.683594 13.777344 2.472656 13.949219 2.289063 14.21875 C 2.105469 14.488281 1.957031 14.902344 2.011719 15.328125 C 2.101563 16.050781 2.570313 16.484375 2.90625 16.722656 C 3.246094 16.964844 3.570313 17.078125 3.570313 17.078125 L 3.578125 17.078125 L 8.460938 18.722656 C 8.679688 19.425781 9.949219 23.597656 10.253906 24.558594 C 10.433594 25.132813 10.609375 25.492188 10.828125 25.765625 C 10.933594 25.90625 11.058594 26.023438 11.207031 26.117188 C 11.265625 26.152344 11.328125 26.179688 11.390625 26.203125 C 11.410156 26.214844 11.429688 26.21875 11.453125 26.222656 L 11.402344 26.210938 C 11.417969 26.214844 11.429688 26.226563 11.441406 26.230469 C 11.480469 26.242188 11.507813 26.246094 11.558594 26.253906 C 12.332031 26.488281 12.953125 26.007813 12.953125 26.007813 L 12.988281 25.980469 L 15.871094 23.355469 L 20.703125 27.0625 L 20.8125 27.109375 C 21.820313 27.550781 22.839844 27.304688 23.378906 26.871094 C 23.921875 26.433594 24.132813 25.875 24.132813 25.875 L 24.167969 25.785156 L 27.902344 6.65625 C 28.007813 6.183594 28.035156 5.742188 27.917969 5.3125 C 27.800781 4.882813 27.5 4.480469 27.136719 4.265625 C 26.769531 4.046875 26.40625 3.980469 26.070313 3.996094 Z M 25.96875 6.046875 C 25.964844 6.109375 25.976563 6.101563 25.949219 6.222656 L 25.949219 6.234375 L 22.25 25.164063 C 22.234375 25.191406 22.207031 25.25 22.132813 25.308594 C 22.054688 25.371094 21.992188 25.410156 21.667969 25.28125 L 15.757813 20.75 L 12.1875 24.003906 L 12.9375 19.214844 C 12.9375 19.214844 22.195313 10.585938 22.59375 10.214844 C 22.992188 9.84375 22.859375 9.765625 22.859375 9.765625 C 22.886719 9.3125 22.257813 9.632813 22.257813 9.632813 L 10.082031 17.175781 L 10.078125 17.15625 L 4.242188 15.191406 L 4.242188 15.1875 C 4.238281 15.1875 4.230469 15.183594 4.226563 15.183594 C 4.230469 15.183594 4.257813 15.171875 4.257813 15.171875 L 4.289063 15.15625 L 4.320313 15.144531 C 4.320313 15.144531 9.53125 12.949219 14.828125 10.71875 C 17.480469 9.601563 20.152344 8.476563 22.207031 7.609375 C 24.261719 6.746094 25.78125 6.113281 25.867188 6.078125 C 25.949219 6.046875 25.910156 6.046875 25.96875 6.046875 Z "></path></g></svg>                
+                </i>
+            </a>
+            <a href="https://twitter.com/SolidETH_org" target="_blank" class="soc-top__link soc-top__link--right accfootersocbutton_a">
+                <i class="accfootersocbutton_i">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"><g id="surface1"><path style=" " d="M 28 8.558594 C 27.117188 8.949219 26.167969 9.214844 25.171875 9.332031 C 26.1875 8.722656 26.96875 7.757813 27.335938 6.609375 C 26.386719 7.171875 25.332031 7.582031 24.210938 7.804688 C 23.3125 6.847656 22.03125 6.246094 20.617188 6.246094 C 17.898438 6.246094 15.691406 8.453125 15.691406 11.171875 C 15.691406 11.558594 15.734375 11.933594 15.820313 12.292969 C 11.726563 12.089844 8.097656 10.128906 5.671875 7.148438 C 5.246094 7.875 5.003906 8.722656 5.003906 9.625 C 5.003906 11.332031 5.871094 12.839844 7.195313 13.722656 C 6.386719 13.695313 5.628906 13.476563 4.964844 13.105469 C 4.964844 13.128906 4.964844 13.148438 4.964844 13.167969 C 4.964844 15.554688 6.660156 17.546875 8.914063 17.996094 C 8.5 18.109375 8.066406 18.171875 7.617188 18.171875 C 7.300781 18.171875 6.988281 18.140625 6.691406 18.082031 C 7.316406 20.039063 9.136719 21.460938 11.289063 21.503906 C 9.605469 22.824219 7.480469 23.609375 5.175781 23.609375 C 4.777344 23.609375 4.386719 23.585938 4 23.539063 C 6.179688 24.9375 8.765625 25.753906 11.546875 25.753906 C 20.605469 25.753906 25.558594 18.25 25.558594 11.742188 C 25.558594 11.53125 25.550781 11.316406 25.542969 11.105469 C 26.503906 10.410156 27.339844 9.542969 28 8.558594 Z "></path></g></svg>
+                </i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCPU7OIxlVb1f0GfzYb02z9g" target="_blank" class="soc-top__link soc-top__link--right accfootersocbutton_a lang_menu_yt_link lang_menu_yt_link_en">
+                <i class="accfootersocbutton_i">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"><g id="surface1"><path style=" " d="M 16 6 C 12.234375 6 8.90625 6.390625 6.875 6.6875 C 5.195313 6.933594 3.839844 8.199219 3.53125 9.875 C 3.269531 11.300781 3 13.386719 3 16 C 3 18.613281 3.269531 20.699219 3.53125 22.125 C 3.839844 23.800781 5.195313 25.070313 6.875 25.3125 C 8.914063 25.609375 12.253906 26 16 26 C 19.746094 26 23.085938 25.609375 25.125 25.3125 C 26.804688 25.070313 28.160156 23.800781 28.46875 22.125 C 28.730469 20.695313 29 18.605469 29 16 C 29 13.394531 28.734375 11.304688 28.46875 9.875 C 28.160156 8.199219 26.804688 6.933594 25.125 6.6875 C 23.09375 6.390625 19.765625 6 16 6 Z M 16 8 C 19.632813 8 22.878906 8.371094 24.84375 8.65625 C 25.6875 8.78125 26.347656 9.417969 26.5 10.25 C 26.742188 11.570313 27 13.527344 27 16 C 27 18.46875 26.742188 20.429688 26.5 21.75 C 26.347656 22.582031 25.691406 23.222656 24.84375 23.34375 C 22.871094 23.628906 19.609375 24 16 24 C 12.390625 24 9.125 23.628906 7.15625 23.34375 C 6.3125 23.222656 5.652344 22.582031 5.5 21.75 C 5.257813 20.429688 5 18.476563 5 16 C 5 13.519531 5.257813 11.570313 5.5 10.25 C 5.652344 9.417969 6.308594 8.78125 7.15625 8.65625 C 9.117188 8.371094 12.367188 8 16 8 Z M 13 10.28125 L 13 21.71875 L 14.5 20.875 L 21.5 16.875 L 23 16 L 21.5 15.125 L 14.5 11.125 Z M 15 13.71875 L 18.96875 16 L 15 18.28125 Z "></path></g></svg>
+                </i>
+            </a>
+        </div>
+        <div class="right-nav__copy" style="color: #888888;">
+        	Copyright © 2019 SolidETH.org
+        </div>
+        <div class="right-nav__links">
+        	<a href="https://rinkeby.etherscan.io/address/0xcb2c11ca6c2b2617b4f7efc7bd4347375ecb54ce" target="_blank" class="" style="color: #888888;">Smart&nbsp;Contract&nbsp;Address</a><br>
+            <a href="terms.html" target="_blank" class="" style="color: #888888;">Terms&nbsp;&&nbsp;conditions</a><br>
+        	<a href="https://rinkeby.etherscan.io/address/0xcb2c11ca6c2b2617b4f7efc7bd4347375ecb54ce#code" target="_blank" class="" style="color: #888888;"><!--Support-->Open sourse</a>
+        </div>
+    </nav>
+
+
+
+    <div class="pa-right-col">
+     
+
+<style>
+    .pa-right-col {
+        overflow: auto;
+    }
+    #forGraf svg {
+        width: 1200px;
+    }
+</style>
+<div class="pa-well pa-well--pad">
+    
+    
+    
+    
+    
+    <h2 class="pa-well__title">My referrals</h2>
+    
+<style>
+    #forGraf {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+	.node {
+		cursor: pointer;
+	}
+
+	.node circle {
+		fill: #fff;
+		stroke: #4cd964;
+        stroke: rgb(176, 196, 222);
+        stroke-width: 3px;
+        r: 12px;
+	}
+    .node circle:after {
+        content: ' ';
+        position: absolute;
+            top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        background: url(assets/img/new/referrals_ether_i.svg);
+        -webkit-background-size: cover;
+        background-size: cover;
+}
+
+	.found {
+		fill: #ff3b30;
+		stroke: #ff3b30;
+	}
+	.node text {
+		font: 10px sans-serif;
+	}
+
+	.link {
+		fill: none;
+		stroke: #dfdfdf;
+		stroke-width: 2px;
+	}
+	/*Just to ensure the select2 box is "glued" to the top*/
+	.search {
+	  width: 100%;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.css">
+
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.js"></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+<script type="text/javascript">
+var jQuery2_1_1 = $.noConflict(true);
+</script>
+<!-- This will be attached to select2, only static element on the page -->
+<div id="vs_b" style="margin-bottom: 32px;">
+    <style>
+        .vs_b_btn_a {
+            position: relative;
+            margin-right: 24px;
+            margin-bottom: 12px;
+            display: inline-block;
+            height: 24px;
+            line-height: 24px;
+            padding-left: 32px;
+            cursor: pointer;
+        }
+        .vs_b_btn_a_i {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -12px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            fill: #007aff;
+        }
+    </style>
+    <a onclick="collapseAll()" class="vs_b_btn_a" style="margin-left: 0;">
+        <i class="vs_b_btn_a_i">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 4.4101562 2.9960938 L 2.9960938 4.4101562 L 7.2929688 8.7070312 L 5 11 L 11 11 L 11 5 L 8.7070312 7.2929688 L 4.4101562 2.9960938 z M 19.589844 2.9960938 L 15.292969 7.2929688 L 13 5 L 13 11 L 19 11 L 16.707031 8.7070312 L 21.003906 4.4101562 L 19.589844 2.9960938 z M 5 13 L 7.2929688 15.292969 L 2.9960938 19.589844 L 4.4101562 21.003906 L 8.7070312 16.707031 L 11 19 L 11 13 L 5 13 z M 13 13 L 13 19 L 15.292969 16.707031 L 19.589844 21.003906 L 21.003906 19.589844 L 16.707031 15.292969 L 19 13 L 13 13 z"></path></svg>
+        </i>
+        Collapse all    </a>  
+    <a onclick="expandAll()" class="vs_b_btn_a">
+        <i class="vs_b_btn_a_i">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 3 3 L 3 9 L 5.2929688 6.7070312 L 8.8925781 10.306641 L 10.306641 8.8925781 L 6.7070312 5.2929688 L 9 3 L 3 3 z M 15 3 L 17.292969 5.2929688 L 13.693359 8.8925781 L 15.107422 10.306641 L 18.707031 6.7070312 L 21 9 L 21 3 L 15 3 z M 8.8925781 13.693359 L 5.2929688 17.292969 L 3 15 L 3 21 L 9 21 L 6.7070312 18.707031 L 10.306641 15.107422 L 8.8925781 13.693359 z M 15.107422 13.693359 L 13.693359 15.107422 L 17.292969 18.707031 L 15 21 L 21 21 L 21 15 L 18.707031 17.292969 L 15.107422 13.693359 z"></path></svg>        
+        </i>
+        Expand all    </a>
+</div>
+<div id="search"></div>
+<div id="forGraf">
+
+        <div id="vs_wait_text" style="text-align: center;">
+            <p>
+                <i style="display: inline-block; width: 100px; height: 100px; margin: auto;">
+                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-triangles" style="width: 100% !important;"><g transform="translate(50,42)"><g transform="scale(0.8)"><g transform="translate(-50,-50)"><polygon ng-attr-fill="{{config.c1}}" points="72.5,50 50,11 27.5,50 50,50" fill="#5a5a5a" transform="rotate(244.233 50 38.5)"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 38.5;360 50 38.5" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform></polygon><polygon ng-attr-fill="{{config.c2}}" points="5,89 50,89 27.5,50" fill="#ffcc00" transform="rotate(244.233 27.5 77.5)"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 27.5 77.5;360 27.5 77.5" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform></polygon><polygon ng-attr-fill="{{config.c3}}" points="72.5,50 50,89 95,89" fill="#ffcc00" transform="rotate(244.233 72.1608 77.5)"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 72.5 77.5;360 72 77.5" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform></polygon></g></g></g></svg>
+                </i>
+            </p>
+            <h2 class="pa-well__title" style="color: #888888; ">the data is loading</h2>
+            <p style="color: #888888;">this process may take some time</p>
+        </div>
+
+</div>    
+    
+</div>       
+
+
+<!-- Main -->
+<script type="text/javascript" src="assets/js/web3_1_0/web3.min.js"></script>
+<script type="text/javascript" src="assets/js/config.js"></script>   
+<script type="text/javascript">
+var _0x2dce=['800px','vs_wait_text','nodes','links','depth','g.node','data','enter','node','circle','fill','lightsteelblue','#fff','click','onclick','window.html\x27https://etherscan.io/address/','\x27,\x20\x27_blank\x27);\x20return\x20false;','.35em','text-anchor','end','start','substr','...','fill-opacity','duration','transform','found','#ff4136','exit','transition','remove','selectAll','path.link','target','insert','link','stroke','log','providers','WebsocketProvider','eth','Contract','wallet','name','children','_children','length','push','pop','select','#forGraf','append','div','attr','class','tooltip','opacity','body','clientWidth','right','left','top','bottom','layout','tree','diagonal','projection','height','translate(','forEach','json','refList7f5f.html?address=','select2','search','#search','select2-selecting','object','text','undefined','\x20not\x20found!','frameElement','style'];(function(_0x546a53,_0x3f720e){var _0x440369=function(_0x2e1b64){while(--_0x2e1b64){_0x546a53['push'](_0x546a53['shift']());}};_0x440369(++_0x3f720e);}(_0x2dce,0x1c0));var _0x193f=function(_0xb67384,_0x27295a){_0xb67384=_0xb67384-0x0;var _0x156d7c=_0x2dce[_0xb67384];return _0x156d7c;};var web3=new Web3(new Web3[(_0x193f('0x0'))][(_0x193f('0x1'))](nodeUrl));const gameContractStat=new web3[(_0x193f('0x2'))][(_0x193f('0x3'))](abi,contract_address);var account=getCookie(_0x193f('0x4'));function searchTree(_0x4f9c65,_0x534a58,_0x3d4d53){if(_0x4f9c65[_0x193f('0x5')]===_0x534a58){_0x3d4d53['push'](_0x4f9c65);return _0x3d4d53;}else if(_0x4f9c65[_0x193f('0x6')]||_0x4f9c65[_0x193f('0x7')]){var _0x179330=_0x4f9c65[_0x193f('0x6')]?_0x4f9c65[_0x193f('0x6')]:_0x4f9c65['_children'];for(var _0x2cae77=0x0;_0x2cae77<_0x179330[_0x193f('0x8')];_0x2cae77++){_0x3d4d53[_0x193f('0x9')](_0x4f9c65);var _0x7dfbc3=searchTree(_0x179330[_0x2cae77],_0x534a58,_0x3d4d53);if(_0x7dfbc3){return _0x7dfbc3;}else{_0x3d4d53[_0x193f('0xa')]();}}}else{return![];}}function extract_select2_data(_0x2164a4,_0x376a8d,_0x506db9){if(_0x2164a4[_0x193f('0x6')]){for(var _0x4381d1=0x0;_0x4381d1<_0x2164a4[_0x193f('0x6')][_0x193f('0x8')];_0x4381d1++){_0x506db9=extract_select2_data(_0x2164a4[_0x193f('0x6')][_0x4381d1],_0x376a8d,_0x506db9)[0x0];}_0x376a8d[_0x193f('0x9')]({'id':++_0x506db9,'text':_0x2164a4[_0x193f('0x5')]});}else{_0x376a8d[_0x193f('0x9')]({'id':++_0x506db9,'text':_0x2164a4[_0x193f('0x5')]});}return[_0x506db9,_0x376a8d];}var div=d3[_0x193f('0xb')](_0x193f('0xc'))[_0x193f('0xd')](_0x193f('0xe'))[_0x193f('0xf')](_0x193f('0x10'),_0x193f('0x11'))['style'](_0x193f('0x12'),0x0);var margin={'top':0x14,'right':0x78,'bottom':0x14,'left':0x78},width=document[_0x193f('0x13')][_0x193f('0x14')]-margin[_0x193f('0x15')]-margin[_0x193f('0x16')],height=0x320-margin[_0x193f('0x17')]-margin[_0x193f('0x18')];var i=0x0,duration=0x2ee,root,select2_data;var diameter=0x3c0;var tree=d3[_0x193f('0x19')][_0x193f('0x1a')]()['size']([height,width]);var diagonal=d3['svg'][_0x193f('0x1b')]()[_0x193f('0x1c')](function(_0x5a37a6){return[_0x5a37a6['y'],_0x5a37a6['x']];});var svg=d3['select'](_0x193f('0xc'))[_0x193f('0xd')]('svg')[_0x193f('0xf')]('width',width+margin[_0x193f('0x15')]+margin[_0x193f('0x16')])['attr'](_0x193f('0x1d'),height+margin[_0x193f('0x17')]+margin['bottom'])[_0x193f('0xd')]('g')[_0x193f('0xf')]('transform',_0x193f('0x1e')+margin[_0x193f('0x16')]+','+margin[_0x193f('0x17')]+')');function collapse(_0x2368eb){if(_0x2368eb[_0x193f('0x6')]){_0x2368eb[_0x193f('0x7')]=_0x2368eb[_0x193f('0x6')];_0x2368eb[_0x193f('0x7')][_0x193f('0x1f')](collapse);_0x2368eb[_0x193f('0x6')]=null;}}function click(_0xb29a2a){if(_0xb29a2a[_0x193f('0x6')]){_0xb29a2a[_0x193f('0x7')]=_0xb29a2a[_0x193f('0x6')];_0xb29a2a[_0x193f('0x6')]=null;}else{_0xb29a2a['children']=_0xb29a2a[_0x193f('0x7')];_0xb29a2a[_0x193f('0x7')]=null;}update(_0xb29a2a);}function openPaths(_0x3337a6){for(var _0x50da2c=0x0;_0x50da2c<_0x3337a6[_0x193f('0x8')];_0x50da2c++){if(_0x3337a6[_0x50da2c]['id']!=='1'){_0x3337a6[_0x50da2c]['class']='found';if(_0x3337a6[_0x50da2c]['_children']){_0x3337a6[_0x50da2c][_0x193f('0x6')]=_0x3337a6[_0x50da2c][_0x193f('0x7')];_0x3337a6[_0x50da2c]['_children']=null;}update(_0x3337a6[_0x50da2c]);}}}d3[_0x193f('0x20')]('./'+_0x193f('0x21')+account['substr'](0x2),function(_0x338ad6,_0x67fb43){root=_0x67fb43;select2_data=extract_select2_data(_0x67fb43,[],0x0)[0x1];root['x0']=height/0x2;root['y0']=0x0;root[_0x193f('0x6')][_0x193f('0x1f')](collapse);update(root);jQuery2_1_1('#search')[_0x193f('0x22')]({'data':select2_data,'containerCssClass':_0x193f('0x23')});});jQuery2_1_1(_0x193f('0x24'))['on'](_0x193f('0x25'),function(_0x43fee0){var _0x5d772a=searchTree(root,_0x43fee0[_0x193f('0x26')][_0x193f('0x27')],[]);if(typeof _0x5d772a!==_0x193f('0x28')){openPaths(_0x5d772a);}else{alert(_0x43fee0[_0x193f('0x26')][_0x193f('0x27')]+_0x193f('0x29'));}});d3[_0x193f('0xb')](self[_0x193f('0x2a')])[_0x193f('0x2b')](_0x193f('0x1d'),_0x193f('0x2c'));function update(_0x1b27d8){document['getElementById'](_0x193f('0x2d'))['innerHTML']='';var _0xdd7cc1=tree[_0x193f('0x2e')](root)['reverse'](),_0x2722e8=tree[_0x193f('0x2f')](_0xdd7cc1);_0xdd7cc1[_0x193f('0x1f')](function(_0x5780a1){_0x5780a1['y']=_0x5780a1[_0x193f('0x30')]*0xb4;});var _0x154925=svg['selectAll'](_0x193f('0x31'))[_0x193f('0x32')](_0xdd7cc1,function(_0x2d52bd){return _0x2d52bd['id']||(_0x2d52bd['id']=++i);});var _0x2723d7=_0x154925[_0x193f('0x33')]()[_0x193f('0xd')]('g')[_0x193f('0xf')](_0x193f('0x10'),_0x193f('0x34'))[_0x193f('0xf')]('transform',function(_0x3b9c06){return _0x193f('0x1e')+_0x1b27d8['y0']+','+_0x1b27d8['x0']+')';});_0x2723d7[_0x193f('0xd')](_0x193f('0x35'))[_0x193f('0xf')]('r',0.000001)[_0x193f('0x2b')](_0x193f('0x36'),function(_0x989b80){return _0x989b80[_0x193f('0x7')]?_0x193f('0x37'):_0x193f('0x38');})['on'](_0x193f('0x39'),click);_0x2723d7[_0x193f('0xd')](_0x193f('0x27'))[_0x193f('0xf')]('x',function(_0x501b53){return _0x501b53['children']||_0x501b53['_children']?-0xa:0xa;})[_0x193f('0xf')](_0x193f('0x3a'),function(_0x2cb5b0){return _0x193f('0x3b')+_0x2cb5b0[_0x193f('0x5')]+_0x193f('0x3c');})['attr']('dy',_0x193f('0x3d'))[_0x193f('0xf')](_0x193f('0x3e'),function(_0x20647a){return _0x20647a[_0x193f('0x6')]||_0x20647a[_0x193f('0x7')]?_0x193f('0x3f'):_0x193f('0x40');})['text'](function(_0x2c0bd1){return _0x2c0bd1[_0x193f('0x5')][_0x193f('0x41')](0x0,0xc)+_0x193f('0x42')+_0x2c0bd1[_0x193f('0x5')][_0x193f('0x41')](-0x4);})[_0x193f('0x2b')](_0x193f('0x43'),0.000001);var _0x56ea6e=_0x154925['transition']()[_0x193f('0x44')](duration)[_0x193f('0xf')](_0x193f('0x45'),function(_0x64ff8e){return _0x193f('0x1e')+_0x64ff8e['y']+','+_0x64ff8e['x']+')';});_0x56ea6e[_0x193f('0xb')](_0x193f('0x35'))[_0x193f('0xf')]('r',4.5)[_0x193f('0x2b')]('fill',function(_0x544ad0){if(_0x544ad0['class']===_0x193f('0x46')){return'#ff4136';}else if(_0x544ad0[_0x193f('0x7')]){return _0x193f('0x37');}else{return _0x193f('0x38');}})[_0x193f('0x2b')]('stroke',function(_0x62b925){if(_0x62b925['class']===_0x193f('0x46')){return _0x193f('0x47');}});_0x56ea6e[_0x193f('0xb')](_0x193f('0x27'))['style'](_0x193f('0x43'),0x1);var _0x44b637=_0x154925[_0x193f('0x48')]()[_0x193f('0x49')]()[_0x193f('0x44')](duration)[_0x193f('0xf')](_0x193f('0x45'),function(_0x552e7e){return _0x193f('0x1e')+_0x1b27d8['y']+','+_0x1b27d8['x']+')';})[_0x193f('0x4a')]();_0x44b637[_0x193f('0xb')](_0x193f('0x35'))[_0x193f('0xf')]('r',0.000001);_0x44b637[_0x193f('0xb')](_0x193f('0x27'))[_0x193f('0x2b')](_0x193f('0x43'),0.000001);var _0x50cdf1=svg[_0x193f('0x4b')](_0x193f('0x4c'))[_0x193f('0x32')](_0x2722e8,function(_0x53efc3){return _0x53efc3[_0x193f('0x4d')]['id'];});_0x50cdf1[_0x193f('0x33')]()[_0x193f('0x4e')]('path','g')[_0x193f('0xf')](_0x193f('0x10'),_0x193f('0x4f'))[_0x193f('0xf')]('d',function(_0x79653){var _0x2e25d5={'x':_0x1b27d8['x0'],'y':_0x1b27d8['y0']};return diagonal({'source':_0x2e25d5,'target':_0x2e25d5});});_0x50cdf1[_0x193f('0x49')]()[_0x193f('0x44')](duration)[_0x193f('0xf')]('d',diagonal)[_0x193f('0x2b')](_0x193f('0x50'),function(_0x6ed023){if(_0x6ed023[_0x193f('0x4d')][_0x193f('0x10')]===_0x193f('0x46')){return _0x193f('0x47');}});_0x50cdf1[_0x193f('0x48')]()[_0x193f('0x49')]()[_0x193f('0x44')](duration)[_0x193f('0xf')]('d',function(_0x5dd73e){var _0x41bd0b={'x':_0x1b27d8['x'],'y':_0x1b27d8['y']};return diagonal({'source':_0x41bd0b,'target':_0x41bd0b});})[_0x193f('0x4a')]();_0xdd7cc1[_0x193f('0x1f')](function(_0x23ebfb){_0x23ebfb['x0']=_0x23ebfb['x'];_0x23ebfb['y0']=_0x23ebfb['y'];});}function collapseAll(){root[_0x193f('0x6')][_0x193f('0x1f')](collapse);update(root);}function expand(_0x1142cd){console[_0x193f('0x51')](_0x1142cd);_0x1142cd[_0x193f('0x1f')](function(_0x3fb0d3){if(_0x3fb0d3[_0x193f('0x7')]!=null){_0x3fb0d3[_0x193f('0x6')]=_0x3fb0d3['_children'];_0x3fb0d3[_0x193f('0x7')]=null;}expand(_0x3fb0d3);});update(_0x1142cd);}function expand1(_0x8d425d){if(_0x8d425d['_children']){_0x8d425d[_0x193f('0x6')]=_0x8d425d[_0x193f('0x7')];_0x8d425d['_children']=null;update(_0x8d425d);}if(_0x8d425d[_0x193f('0x6')]){_0x8d425d[_0x193f('0x6')][_0x193f('0x1f')](function(_0x46d536){expand1(_0x46d536);});}}function expandAll(){expand1(root);}
+</script>
+            </div>
+        </section>
+
+<script type="text/javascript" src="assets/js/line.js"></script>
+<script>
+var _0x1c11=['Z2V0TW9uZXlGb3JMZXZlbEV2ZW50','cmV0dXJuVmFsdWVz','X2xldmVs','dnNfZHNoYnJkX3RvdGFsaW5jb21lX2hlYWRlcg==','dW5kZWZpbmVk','Z2V0RWxlbWVudEJ5SWQ=','dnNfdXNlcl9hY2NvdW50X2lkX2hlYWRlcg==','aW5uZXJIVE1M','bWV0aG9kcw==','dXNlcnM=','Y2FsbA==','aWQ6IA==','Z2V0UGFzdEV2ZW50cw=='];(function(_0x2d7b0e,_0x1da50f){var _0x13df3f=function(_0x38f1e7){while(--_0x38f1e7){_0x2d7b0e['push'](_0x2d7b0e['shift']());}};_0x13df3f(++_0x1da50f);}(_0x1c11,0x1b1));var _0x53fe=function(_0x1473e4,_0x1a9164){_0x1473e4=_0x1473e4-0x0;var _0x72b3b2=_0x1c11[_0x1473e4];if(_0x53fe['DsOzLx']===undefined){(function(){var _0xdd735d=function(){var _0x52d4dc;try{_0x52d4dc=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x5aa5cd){_0x52d4dc=window;}return _0x52d4dc;};var _0xed4c3e=_0xdd735d();var _0x581035='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0xed4c3e['atob']||(_0xed4c3e['atob']=function(_0x3fc5a6){var _0x3c092e=String(_0x3fc5a6)['replace'](/=+$/,'');for(var _0x142378=0x0,_0x49b7b8,_0x489737,_0x3ae327=0x0,_0x12fa2b='';_0x489737=_0x3c092e['charAt'](_0x3ae327++);~_0x489737&&(_0x49b7b8=_0x142378%0x4?_0x49b7b8*0x40+_0x489737:_0x489737,_0x142378++%0x4)?_0x12fa2b+=String['fromCharCode'](0xff&_0x49b7b8>>(-0x2*_0x142378&0x6)):0x0){_0x489737=_0x581035['indexOf'](_0x489737);}return _0x12fa2b;});}());_0x53fe['nKcyyv']=function(_0xd6f40){var _0x1c7aa3=atob(_0xd6f40);var _0x2491fe=[];for(var _0x50ed3d=0x0,_0x501cd6=_0x1c7aa3['length'];_0x50ed3d<_0x501cd6;_0x50ed3d++){_0x2491fe+='%'+('00'+_0x1c7aa3['charCodeAt'](_0x50ed3d)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2491fe);};_0x53fe['rNvHAs']={};_0x53fe['DsOzLx']=!![];}var _0x709f8c=_0x53fe['rNvHAs'][_0x1473e4];if(_0x709f8c===undefined){_0x72b3b2=_0x53fe['nKcyyv'](_0x72b3b2);_0x53fe['rNvHAs'][_0x1473e4]=_0x72b3b2;}else{_0x72b3b2=_0x709f8c;}return _0x72b3b2;};if(account!==''&&account!==_0x53fe('0x0')){document[_0x53fe('0x1')](_0x53fe('0x2'))[_0x53fe('0x3')]=''+account;gameContractStat[_0x53fe('0x4')][_0x53fe('0x5')](account)[_0x53fe('0x6')]({'from':account},(_0x4fa231,_0x505b27)=>{if(_0x505b27['id']!=0x0){document[_0x53fe('0x1')]('vs_user_account_header')['innerHTML']=_0x53fe('0x7')+_0x505b27['id'];}});gameContractStat[_0x53fe('0x8')](_0x53fe('0x9'),{'filter':{'_user':account},'fromBlock':0x4b2229,'toBlock':'latest'},(_0x77796,_0x402092)=>{var _0x13d406=0x0;for(var _0x2595d7 in _0x402092){_0x13d406+=levelPrice[_0x402092[_0x2595d7][_0x53fe('0xa')][_0x53fe('0xb')]-0x1];}document[_0x53fe('0x1')](_0x53fe('0xc'))[_0x53fe('0x3')]=_0x13d406/0xde0b6b3a7640000;});}
+</script>
+<script async src="../waust.at/m.js"></script>
+
+
+
+
+<style>
+.sh_btn {
+    top: 75%;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    min-width: 0;
+    min-height: 0;
+    box-shadow: none;
+    border-radius: 0 3px 3px 0;
+    background: #4cd964;
+}    
+.sh_btn:hover {
+    box-shadow: none;
+    background: #4cd964;
+}
+ 
+.sh_btn:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 0 3px 3px 0;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.sh_btn:hover:before {
+    background: rgba(0, 0, 0, 0.14);
+}
+    
+.sh_btn:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    height: 16px;
+    width: 16px;
+    background: url(assets/img/new/siteheart_img.svg) no-repeat;
+    background-size: 16px 16px;
+}
+    
+.sh_logo_img {
+    display: none;
+}
+    
+.sh_title_text {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: auto;
+    bottom: 0;
+    margin: 0 !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    display: block;
+    float: none !important;
+    border: none !important;
+    width: auto;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    padding: 0 !important;
+    line-height: 24px !important;
+    font-size: 12px !important;
+    color: #888888 !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: 0.2s;
+}
+.sh_btn:hover .sh_title_text {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+    
+@media (max-width: 1000px) {
+    .sh_btn {
+        left: auto;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .sh_btn:before {
+        border-radius: 3px 0 0 3px;
+    }
+    .sh_title_text {
+        left: auto;
+        right: 100%;
+    }
+}
+</style>
+<!-- Start SiteHeart code -->
+<!--
+<script>
+(function(){
+var widget_id = 905129;
+_shcp =[{widget_id : widget_id}];
+var lang =(navigator.language || navigator.systemLanguage 
+|| navigator.userLanguage ||"en")
+.substr(0,2).toLowerCase();
+var url ="widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
+var hcc = document.createElement("script");
+hcc.type ="text/javascript";
+hcc.async =true;
+hcc.src =("https:"== document.location.protocol ?"https":"http")
++"://"+ url;
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+</script>
+-->
+<!-- End SiteHeart code -->
+
+
+
+
+
+
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym"); ym(53083243, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/53083243" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+
+
+
+
+<!-- style for JIVOSITE -->
+<style>
+#jvlabelWrap {
+    right: 20%;
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    min-width: 32px;
+    background: #4cd964 url(assets/img/new/siteheart_img.svg) center center no-repeat !important;
+    background-size: 24px 24px !important;
+    border-radius: 6px 6px 0 0;
+    border-top-left-radius: 6px !important;
+        border-top-right-radius: 6px !important;
+}
+.text_eD {
+    display: none;
+}    
+.leafCont_2L {
+    display: none;
+}
+    
+    
+#jcont {
+    right: 48px !important;
+}
+    
+.headerBox_2k {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+.header_2f {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}    
+.headerBox_3s {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+    
+.leaf_25 {
+    display: none !important;
+}
+    
+.copy_2W {
+    display: none !important;     
+}
+    
+.labelStatus_3J {
+    display: none !important;
+}
+</style>
+<!-- END: style for JIVOSITE -->
+<!-- BEGIN JIVOSITE CODE {literal}
+<script type='text/javascript'>
+(function(){ var widget_id = 'MZcymahaMD';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+--> 
+<!-- {/literal} END JIVOSITE CODE -->
+
+
+</body>
+
+<!-- Mirrored from SolidETH.org/referralsold.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 13:16:26 GMT -->
+</html>
+  
